@@ -1,0 +1,415 @@
+.wrapper{
+    height: 750px;
+    background-color: #2D3E50;
+    overflow: hidden;
+    text-align: center;
+}
+
+.section{
+    text-align: center;
+}
+
+.container{
+    max-width: 940px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    position: relative;
+    z-index: 2;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 100px;
+}
+
+.h1{
+    width: 100%;
+    text-align: center;
+    
+    font-size: 50px;
+    font-family: Futura PT custom Demi; 
+    color: white;
+
+    margin-bottom: 50px;
+}
+
+.contacteBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.leftContacteBox{
+    width: 540px;
+}
+
+.h2{
+    width: 100%;
+    text-align: left;
+    
+    font-size: 40px;
+    font-family: Futura PT custom Demi; 
+    color: white;
+
+    margin-bottom: 40px;
+}
+
+.mobileLine{
+    width: 100%;
+    height: 2px;
+    background-color: #E5E5E5;
+    display: none;
+}
+
+.contactBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    font-size: 20px;
+    font-family: Futura PT custom Demi; 
+    color: white;
+
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+.icon{
+    height: 30px;
+    width: 30px;
+
+    margin-right: 10px;
+}
+
+.contactLink{
+
+}
+
+.socialBox{
+    width: 120px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-top: 20px;
+}
+
+.socialIcon{
+    height: 54px;
+    width: 54px;
+}
+
+.rightContainerBox{
+    width: 320px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 60px;
+}
+
+.input{
+    width: 100%;
+    height: 30px;
+
+    font-size: 16px;
+    font-family: Futura PT custom Demi; 
+    color: #E5E5E5;
+    line-height: 30px;
+
+    background-color: #2D3E50;
+    border: 2px solid #AFDF9D;
+    box-sizing: border-box;
+
+    padding-left: 10px;
+    margin-bottom: 11px;
+}
+
+.h3{
+    width: 100%;
+    text-align: center;
+    
+    font-size: 26px;
+    font-family: Futura PT custom Demi; 
+    color: white;
+
+    margin-bottom: 11px;
+    margin-top: 0px;
+}
+
+.button{
+    width: 220px;
+    height: 40px;
+
+    font-family: Futura PT custom Demi;
+    font-size: 24px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+
+    background: #AFDF9D;
+    border-radius: 4px;
+    padding: 0;
+    border: none; 
+
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.button:hover{
+    color: #2D3E50;
+    transition: 300ms;
+}
+
+.backgroundImg{
+    position: relative;
+    width: 1117.07px;
+    height: 1287.06px;
+    top: -600px;
+
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.form{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.emailSent{
+    width: 100%;
+    height: 30px;
+    text-align: left;
+
+    font-size: 16px;
+    font-family: Futura PT custom Demi; 
+    color: #2D3E50;
+    line-height: 30px;
+
+    background-color: #E5E5E5;
+    border: none;
+    box-sizing: border-box;
+
+    padding-left: 10px;
+    margin-bottom: 11px;
+    margin-top: 20px;
+
+    transition: 300ms;
+}
+
+@media screen and (max-width: 992px){
+    .wrapper{
+        height: 1050px;
+        overflow: hidden;
+    }
+    
+    .container{
+        max-width: 524px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    
+        position: relative;
+        z-index: 2;
+    
+        margin-left: auto;
+        margin-right: auto;
+    
+        padding-top: 100px;
+    }
+    
+    .h1{
+        width: 100%;
+        text-align: center;
+        
+        font-size: 50px;
+        font-family: Futura PT custom Demi; 
+        color: white;
+    
+        margin-bottom: 50px;
+    }
+    
+    .contacteBox{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .leftContacteBox{
+        width: 100%;
+    }
+    
+    .h2{
+        width: 100%;
+        text-align: center;
+        
+        font-size: 32px;
+    
+        margin-bottom: 8px;
+    }
+
+    .mobileLine{
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    .contactBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    
+        font-size: 20px;
+        font-family: Futura PT custom Demi; 
+        color: white;
+    
+        text-decoration: underline;
+        margin-bottom: 15px;
+    }
+    
+    .icon{
+        height: 30px;
+        width: 30px;
+    
+        margin-right: 10px;
+    }
+    
+    .contactLink{
+    
+    }
+    
+    .socialBox{
+        width: 100%;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    
+        margin-top: 20px;
+    }
+    
+    .socialIcon{
+        margin-right: 18px;
+    }
+    
+    .rightContainerBox{
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        padding-top: 60px;
+    }
+    
+    .input{
+        width: 100%;
+        height: 30px;
+    
+        font-size: 16px;
+        font-family: Futura PT custom Demi; 
+        color: #E5E5E5;
+        line-height: 30px;
+    
+        background-color: #2D3E50;
+        border: 2px solid #AFDF9D;
+        box-sizing: border-box;
+    
+        /* padding-left: 10px; */
+        margin-bottom: 11px;
+    }
+    
+    .backgroundImg{
+        position: relative;
+        width: 926px;
+        height: 1031px;
+        top: -1000px;
+        left: calc(( 100vw - 926px ) / 2);
+    
+        opacity: 0.15;
+        z-index: 0;
+    }
+
+    /* .button{
+        margin-bottom: 50px;
+    } */
+
+    .form{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 524px){
+    .container{
+        max-width: 344px;
+        padding-top: 100px;
+    }
+    
+    .h1{
+        width: 100%;        
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .h2{
+        font-size: 26px;
+        margin-bottom: 5px;
+    }
+
+    .mobileLine{
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    .contactBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    
+        font-size: 20px;
+        font-family: Futura PT custom Demi; 
+        color: white;
+    
+        text-decoration: underline;
+        margin-bottom: 15px;
+    }
+    
+    .icon{
+        height: 30px;
+        width: 30px;
+    
+        margin-right: 10px;
+    }
+    
+    .backgroundImg{
+        position: relative;
+        width: 594px;
+        height: 681px;
+        top: -750px;
+        left: calc(( 100vw - 594px ) / 2);
+    
+        opacity: 0.15;
+        z-index: 0;
+    }
+}

@@ -1,0 +1,325 @@
+.wrapper{
+    height: 900px;
+    background-color: #2D3E50;
+    overflow: hidden;
+}
+
+.container{
+    max-width: 940px;
+    height: 1000px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    padding-top: 100px;
+}
+
+.h1{
+    font-size: 50px;
+    font-family: Futura PT custom Demi; 
+    color: white;
+    margin-bottom: 57px;
+    
+    width:100%;
+    text-align: center;
+}
+
+.mainInfoWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    height: 700px;
+}
+
+.sliderWrapper{
+    width: 540px;
+    height: 420px;
+}
+
+.slider{
+    width: 100%;
+    height: 420px;
+}
+
+.tradingImg{
+    height: 420px;
+    width: 540px;
+}
+
+.changeSlideButtonsWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-top: -240px;
+}
+
+.changeSlideButton{
+    width: 60px;
+    height: 60px;
+    background: #AFDF9D;
+    opacity: 0.7;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.slidesButtonsWrapper{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin-top: 20px;
+    height: 14px;
+}
+
+.slidesButtonInactive{
+    width: 14px;
+    height: 14px;
+    background: #E5E5E5;
+    border-radius: 50%;
+
+    margin-right: 14px;
+    cursor: pointer;
+}
+
+.slidesButtonActive{
+    width: 14px;
+    height: 14px;
+    background: #AFDF9D;
+    border-radius: 50%;
+
+    margin-right: 14px;
+}
+
+.textDiv{
+    width: 300px;
+}
+
+.h2{
+    width: 100%;
+
+    font-family: Futura PT custom Demi;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+
+    margin-top: 0px;
+}
+
+.subheading{
+    width: 100%;
+
+    font-family: Futura PT custom Demi;
+    font-size: 20px;
+    line-height: 26px;
+    color: #E5E5E5;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.statsWrapper{
+    width: 100%;
+}
+
+.rotatedImg{
+    transform: rotate(180deg);
+}
+
+.stat{
+    width: 300px;
+    height: 42px;
+    background: #AFDF9D;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.statText{
+    font-family: Futura PT custom Demi;
+    font-size: 24px;
+    line-height: 42px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.statNumber{
+    font-family: Futura PT custom Demi;
+    font-size: 24px;
+    line-height: 42px;
+    text-align: center;
+    
+    color: #2D3E50;
+}
+
+@media screen and (max-width: 992px){
+    .wrapper{
+        height: 1000px;
+    }
+    
+    .container{
+        height: auto;
+        width: 524px;
+    
+        margin-right: auto;
+        margin-left: auto;
+    
+        padding-top: 100px;
+    }
+    
+    .h1{
+        font-size: 44px;
+        line-height: 52px;
+        margin-bottom: 40px;
+    }
+    
+    .mainInfoWrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+    
+        height: auto;
+    }
+    
+    .sliderWrapper{
+        width: 100%;
+        height: auto;
+    }
+    
+    .slider{
+        width: 100%;
+        height: 320px;
+    }
+
+    .tradingImg{
+        height: 320px;
+        width: 100%;
+    }
+    
+    .changeSlideButtonsWrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    
+        margin-top: -182px;
+    }
+    
+    .changeSlideButton{
+        width: 44px;
+        height: 44px;
+    }
+    
+    .slidesButtonsWrapper{
+        height: 11px;
+    }
+    
+    .slidesButtonInactive{
+        width: 11px;
+        height: 11px;
+    
+        margin-right: 11px;
+    }
+    
+    .slidesButtonActive{
+        width: 11px;
+        height: 11px;
+        margin-right: 11px;
+    }
+    
+    .textDiv{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .h2{
+        display: none;
+    }
+    
+    .subheading{
+        margin-top: 0px;
+        margin-bottom: 40px;
+
+        text-align: center;
+    }
+    
+    .statsWrapper{
+        width: 100%;
+    }
+    
+    .stat{
+        width: 100%;
+    }
+    
+}
+
+
+@media screen and (max-width: 524px){
+    .wrapper{
+        height: 1000px;
+    }
+    
+    .container{
+        height: auto;
+        max-width: 344px;
+    
+        margin-right: auto;
+        margin-left: auto;
+    
+        padding-top: 90px;
+    }
+    
+    .h1{
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .sliderWrapper{
+        width: 100%;
+        height: auto;
+    }
+    
+    .slider{
+        width: 100%;
+        height: 240px;
+    }
+
+    .tradingImg{
+        height: 240px;
+        width: 100%;
+    }
+    
+    .changeSlideButtonsWrapper{
+        margin-top: -142px;
+    }
+
+    
+    .textDiv{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .h2{
+        display: none;
+    }
+    
+    .subheading{
+        margin-top: 0px;
+        margin-bottom: 30px;
+
+        text-align: center;
+    }
+    
+}

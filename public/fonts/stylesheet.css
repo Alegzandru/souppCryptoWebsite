@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'Futura PT custom';
+    src: url('/fonts/subset-FuturaPT-BoldObl.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPT-BoldObl.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom Cond Extra';
+    src: url('/fonts/subset-FuturaPTCond-ExtraBold.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPTCond-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom';
+    src: url('/fonts/subset-FuturaPT-Bold.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom Book';
+    src: url('/fonts/subset-FuturaPT-BookObl.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPT-BookObl.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom Cond Book';
+    src: url('/fonts/subset-FuturaPTCond-BookObl.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPTCond-BookObl.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom Cond';
+    src: url('/fonts/subset-FuturaPTCond-BoldObl.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPTCond-BoldObl.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom Cond';
+    src: url('/fonts/subset-FuturaPTCond-Bold.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPTCond-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom Cond Book';
+    src: url('/fonts/subset-FuturaPTCond-Book.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPTCond-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom Book';
+    src: url('/fonts/subset-FuturaPT-Book.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPT-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom';
+    src: url('/fonts/subset-FuturaPT-Light.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPT-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom';
+    src: url('/fonts/subset-FuturaPT-LightObl.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPT-LightObl.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom Extra';
+    src: url('/fonts/subset-FuturaPT-ExtraBold.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPT-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom Cond Extra Bold Ital';
+    src: url('/fonts/subset-FuturaPTCond-ExtraBoldObl.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPTCond-ExtraBoldObl.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom Extra';
+    src: url('/fonts/subset-FuturaPT-ExtraBoldObl.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPT-ExtraBoldObl.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom Demi';
+    src: url('/fonts/subset-FuturaPT-DemiObl.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPT-DemiObl.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom';
+    src: url('/fonts/subset-FuturaPT-Heavy.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPT-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom';
+    src: url('/fonts/subset-FuturaPT-Medium.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPT-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom Cond';
+    src: url('/fonts/subset-FuturaPTCond-MediumObl.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPTCond-MediumObl.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom';
+    src: url('/fonts/subset-FuturaPT-MediumObl.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPT-MediumObl.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom Demi';
+    src: url('/fonts/subset-FuturaPT-Demi.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPT-Demi.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom';
+    src: url('/fonts/subset-FuturaPT-HeavyObl.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPT-HeavyObl.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom Cond';
+    src: url('/fonts/subset-FuturaPTCond-Medium.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPTCond-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
