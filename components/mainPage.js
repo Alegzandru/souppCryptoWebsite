@@ -44,7 +44,7 @@ export function MainPage(props){
                     >
                         <img 
                             className={scrolledBy ? styles.mainLogo : hoveredLogo ? styles.mainLogoHover : styles.mainLogo} 
-                            src="/SOUPPlogosquare2.svg"
+                            src="/SOUPPlogoSquare2.svg"
                             // style={{display : scrolledBy ? "none" : "block"}}
                         />
 
@@ -194,6 +194,10 @@ export function MainPage(props){
                             <div
                                 className={styles.scrollLogoMobile}
                                 style={{display : clickedMobile ? "none" : "block"}}
+                                onClick={ () => {
+                                    setClickedMobile(!clickedMobile)
+                                    setContent(0)
+                                }}
                             >
                                 <img
                                     src="clickIcon.svg"
@@ -320,31 +324,34 @@ export function MainPage(props){
                         <h2 className={clickedMobile? styles.h2Clicked : styles.h2}>
                             {globalContent[props.lang].mainPageContent[content].subheading}
                         </h2>
-                        <div 
-                            className={styles.smallIconsWrapper}
-                            style={{
-                                display : clickedMobile ? "none" : hoveredLogo ? "none" : "flex"
-                            }}
-                        >
-                            <img src="/commodities.svg" className={styles.smallIcon}></img>
-                            <img src="/digest.svg" className={styles.smallIcon}></img>
-                            <img src="/discuss.svg" className={styles.smallIcon}></img>
-                            <img src="/fundamental.svg" className={styles.smallIcon}></img>
-                            <img src="/futures.svg" className={styles.smallIcon}></img>
-                            <img src="/invest.svg" className={styles.smallIcon}></img>
-                            <img src="/library.svg" className={styles.smallIcon}></img>
-                            <img src="/liveTrade.svg" className={styles.smallIcon}></img>
-                            <img src="/market.svg" className={styles.smallIcon}></img>
-                            <img src="/news.svg" className={styles.smallIcon}></img>
-                            <img src="/papers.svg" className={styles.smallIcon}></img>
-                            <img src="/prediction.svg" className={styles.smallIcon}></img>
-                            <img src="/signals.svg" className={styles.smallIcon}></img>
-                            <img src="/videos.svg" className={styles.smallIcon}></img>
-                            <img src="/commodities.svg" className={styles.smallIcon}></img>
-                            <img src="/digest.svg" className={styles.smallIcon}></img>
-                            <img src="/discuss.svg" className={styles.smallIcon}></img>
-                            <img src="/fundamental.svg" className={styles.smallIcon}></img>
-                            <img src="/futures.svg" className={styles.smallIcon}></img>
+                        <div className={styles.smallIconsContainer}>
+                            <div 
+                                className={styles.smallIconsWrapper}
+                                style={{
+                                    display : clickedMobile ? "none" : hoveredLogo ? "none" : "flex"
+                                }}
+                            >
+                                <img src="/commodities.svg" className={styles.smallIcon}></img>
+                                <img src="/digest.svg" className={styles.smallIcon}></img>
+                                <img src="/discuss.svg" className={styles.smallIcon}></img>
+                                <img src="/fundamental.svg" className={styles.smallIcon}></img>
+                                <img src="/futures.svg" className={styles.smallIcon}></img>
+                                <img src="/invest.svg" className={styles.smallIcon}></img>
+                                <img src="/library.svg" className={styles.smallIcon}></img>
+                                <img src="/liveTrade.svg" className={styles.smallIcon}></img>
+                                <img src="/market.svg" className={styles.smallIcon}></img>
+                                <img src="/news.svg" className={styles.smallIcon}></img>
+                                <img src="/papers.svg" className={styles.smallIcon}></img>
+                                <img src="/prediction.svg" className={styles.smallIcon}></img>
+                                <img src="/signals.svg" className={styles.smallIcon}></img>
+                                <img src="/videos.svg" className={styles.smallIcon}></img>
+                                <img src="/commodities.svg" className={styles.smallIcon}></img>
+                                <img src="/digest.svg" className={styles.smallIcon}></img>
+                                <img src="/discuss.svg" className={styles.smallIcon}></img>
+                                <img src="/fundamental.svg" className={styles.smallIcon}></img>
+                                <img src="/futures.svg" className={styles.smallIcon}></img>
+                                {/* <img src="/invest.svg" className={styles.smallIcon}></img> */}
+                            </div>
                         </div>
                     </div>
                 </div>

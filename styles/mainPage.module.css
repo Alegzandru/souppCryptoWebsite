@@ -289,6 +289,7 @@
         height: auto;
         width: 100%;
         margin-left: 0px;
+        overflow: visible;
     }
 
     .h1{
@@ -321,13 +322,13 @@
     
     .smallIconsWrapper{
         display: flex;
-        justify-content: center;
-        width: 100%;
+        justify-content: space-between;
+        width: 1710px;
     }
     
     .smallIcon{
         height: 80px;
-        width: auto;
+        width: 80px;
         margin-right: 10px;
     }
 
@@ -371,6 +372,33 @@
         width: 80px;
         height: 80px;
     }
+
+    .smallIconsContainer{
+        width: 460px;
+        height: auto;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* .smallIconsWrapper{
+        display: flex;
+        justify-content: space-between;
+        width: 1710px;
+    
+        animation: moveIconsWrapper 30s infinite;
+        animation-timing-function: linear;
+    }
+    
+    @keyframes moveIconsWrapper {
+        0% {
+            margin-left: 0px;
+        }
+        100% {
+            margin-left: -1186px;
+        }
+    } */
+
 }
 
 @media screen and (max-width: 524px){
@@ -421,7 +449,25 @@
         margin-bottom: 18px;
     }
     
-    .smallIconsWrapper{
+    
+    .scrollLogoMobile{
+        margin-top: -200px;
+    }
+    
+    .mainLogoMobileClicked{
+        position: relative;
+        z-index: 0;
+    
+        width: 700px;
+        height: 819px;
+        transition: 1000ms;
+        margin-left: calc((100vw - 700px)/2 - 16px);
+        margin-top: -70px;
+    
+        left: 0px;
+    }
+    
+    /* .smallIconsWrapper{
         display: flex;
         justify-content:space-between;
         width: 100%;
@@ -431,22 +477,35 @@
         height: 63px;
         width: auto;
         margin-right: 0px;
+    } */
+
+    .smallIconsContainer{
+        margin-top: 30px;
+        width: 340px;
+        height: auto;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .scrollLogoMobile{
-        margin-top: -200px;
+    .smallIconsWrapper{
+        display: flex;
+        justify-content: space-between;
+        width: 1197px;
+    }
+    
+    .smallIcon{
+        height: 63px;
+        width: 63px;
+        margin-right: 00px;
     }
 
-    .mainLogoMobileClicked{
-        position: relative;
-        z-index: 0;
-    
-        width: 700px;
-        height: 819px;
-        transition: 1000ms;
-        margin-left: calc((100vw - 700px)/2 - 32px);
-        margin-top: -70px;
-    
-        left: 0px;
+    @keyframes moveIconsWrapper {
+        0% {
+            margin-left: 0px;
+        }
+        100% {
+            margin-left: -857px;
+        }
     }
 }
