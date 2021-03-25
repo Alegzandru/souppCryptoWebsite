@@ -322,7 +322,20 @@ export function MainPage(props){
                             </div>
                         </div>
                         <h2 className={clickedMobile? styles.h2Clicked : styles.h2}>
-                            {globalContent[props.lang].mainPageContent[content].subheading}
+                            {/* {globalContent[props.lang].mainPageContent[content].subheading} */}
+                            <div>
+                                {
+                                content == 0 ? globalContent[props.lang].mainPageContent[content].subheading
+                                :
+                                globalContent[props.lang].mainPageContent[content].chat1
+                                }
+                            </div>
+                            <div>
+                                {globalContent[props.lang].mainPageContent[content].chat2}
+                            </div>
+                            <div>
+                                {globalContent[props.lang].mainPageContent[content].chat3}
+                            </div>
                         </h2>
                         <div className={styles.smallIconsContainer}>
                             <div 

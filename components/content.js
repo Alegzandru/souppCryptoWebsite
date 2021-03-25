@@ -6,20 +6,32 @@ export const globalContent = [
                 subheading : "SOUPP - это колектив трэйдеров с многолетним опытом. Мы помогаем начинающим понять как работает биржа и предлагаем качественные торговые сигналы."
             },
             {
-                heading: "SOUPP chat 1",
-                subheading : "#priceprediction — долгосрочные прогнозы на криптовалютном рынке, как в паре к USDT, так и к BTC.\n #futures — кратко/среднесрочные прогнозы на криптовалютном рынке в паре к USDT и к BTC.\n #signals — полуавтоматизированные торговые сигналы с полной выкладкой по входам, стопам и тейкам."
+                heading: "Чаты для предсказывания цен",
+                subheading : "#priceprediction — долгосрочные прогнозы на криптовалютном рынке, как в паре к USDT, так и к BTC.\n #futures — кратко/среднесрочные прогнозы на криптовалютном рынке в паре к USDT и к BTC.\n #signals — полуавтоматизированные торговые сигналы с полной выкладкой по входам, стопам и тейкам.",
+                chat1 : "#priceprediction — долгосрочные прогнозы на криптовалютном рынке, как в паре к USDT, так и к BTC.",
+                chat2 : "#futures — кратко/среднесрочные прогнозы на криптовалютном рынке в паре к USDT и к BTC.",
+                chat3: "#signals — полуавтоматизированные торговые сигналы с полной выкладкой по входам, стопам и тейкам."
             },
             {
-                heading: "SOUPP chat 2",
-                subheading: "#papers — анализ и прогнозы акций самых различных компаний. #commodities - анализ и прогнозы сырьевых активов. #fundamental - фундаментальные основы и изменения рождающие инвестиционные идеи."
+                heading: "Чаты для анализа рынка",
+                subheading: "#papers — анализ и прогнозы акций самых различных компаний. #commodities - анализ и прогнозы сырьевых активов. #fundamental - фундаментальные основы и изменения рождающие инвестиционные идеи.",
+                chat1 : "#papers — анализ и прогнозы акций самых различных компаний.",
+                chat2 : "#commodities - анализ и прогнозы сырьевых активов.",
+                chat3 : "#fumdamental - фундаментальные основы и изменения рождающие инвестиционные идеи."
             },
             {
-                heading: "SOUPP chat 3",
-                subheading: "#marketview — главная информация со всех рынков: криптовалютные и фондовые индексы, фьючерсы и опционы, форекс и другое. #digest — еженедельный обзорный анализ происходящего на финансовых рынках. #news - самые важные новости с фондового и крипто рынка, отчеты, цифры, выступления."
+                heading: "Последние новости рынка",
+                subheading: "#marketview — главная информация со всех рынков: криптовалютные и фондовые индексы, фьючерсы и опционы, форекс и другое. #digest — еженедельный обзорный анализ происходящего на финансовых рынках. #news - самые важные новости с фондового и крипто рынка, отчеты, цифры, выступления.",
+                chat1 : "#marketview — главная информация со всех рынков: криптовалютные и фондовые индексы, фьючерсы и опционы, форекс и другое.",
+                chat2 : "#digest — еженедельный обзорный анализ происходящего на финансовых рынках.",
+                chat3 : "#news - самые важные новости с фондового и крипто рынка, отчеты, цифры, выступления."
             },
             {
-                heading: "SOUPP chat 4",
-                subheading: "#library — полезные материалы из сторонних источников. #videos - обучающие видео на различную тематику: мотивационные, технические инструменты, идеи торговых стратегий и тд. #tools - детальный разбор и объяснение работы технических инструментов."
+                heading: "Иструменты и информативные чаты",
+                subheading: "#library — полезные материалы из сторонних источников. #videos - обучающие видео на различную тематику: мотивационные, технические инструменты, идеи торговых стратегий и тд. #tools - детальный разбор и объяснение работы технических инструментов.",
+                chat1: "#library — полезные материалы из сторонних источников.",
+                chat2: "#videos - обучающие видео на различную тематику: мотивационные, технические инструменты, идеи торговых стратегий и тд.",
+                chat3: "#tools - детальный разбор и объяснение работы технических инструментов."
             },
         ],
         aboutUsStatsContent: 
@@ -100,19 +112,31 @@ export const globalContent = [
             },
             {
                 heading: "Price prediction chats",
-                subheading : "SOUPP - это колектив трэйдеров с многолетним опытом. Мы помогаем начинающим понять как работает биржа и предлагаем качественные торговые сигналы."
+                subheading : "SOUPP - это колектив трэйдеров с многолетним опытом. Мы помогаем начинающим понять как работает биржа и предлагаем качественные торговые сигналы.",
+                chat1 : "#priceprediction — long-term forecasts for the cryptocurrency market, both in pairs to USDT and BTC.",
+                chat2 : "#futures — short / medium-term forecasts in the cryptocurrency market in pairs to USDT and BTC.",
+                chat3: "#signals — semi-automated trading signals with full display of entries, stops and takes."
             },
             {
                 heading: "Market analysis chats",
-                subheading : "SOUPP - это колектив трэйдеров с многолетним опытом. Мы помогаем начинающим понять как работает биржа и предлагаем качественные торговые сигналы."
+                subheading : "SOUPP - это колектив трэйдеров с многолетним опытом. Мы помогаем начинающим понять как работает биржа и предлагаем качественные торговые сигналы.",
+                chat1 : "#papers — analysis and forecasts of stocks of various companies.",
+                chat2 : "#commodities - analysis and forecasts of commodity assets.",
+                chat3 : "#fumdamental - fundamentals and changes giving rise to investment ideas."
             },
             {
                 heading: "Market news chats",
-                subheading : "SOUPP - это колектив трэйдеров с многолетним опытом. Мы помогаем начинающим понять как работает биржа и предлагаем качественные торговые сигналы."
+                subheading : "SOUPP - это колектив трэйдеров с многолетним опытом. Мы помогаем начинающим понять как работает биржа и предлагаем качественные торговые сигналы.",
+                chat1 : "#marketview — main information from all markets: cryptocurrency and stock indices, futures and options, forex and more.",
+                chat2 : "#digest — weekly review of what is happening in the financial markets.",
+                chat3 : "#news - the most important news from the stock and crypto market, reports, figures, speeches."
             },
             {
                 heading: "Tools and informative chats",
-                subheading : "SOUPP - это колектив трэйдеров с многолетним опытом. Мы помогаем начинающим понять как работает биржа и предлагаем качественные торговые сигналы."
+                subheading : "SOUPP - это колектив трэйдеров с многолетним опытом. Мы помогаем начинающим понять как работает биржа и предлагаем качественные торговые сигналы.",
+                chat1: "#library — useful materials from third-party sources.",
+                chat2: "#videos - training videos on various topics: motivational, technical tools, trading strategy ideas, etc.",
+                chat3: "#tools - detailed analysis and explanation of the work of technical tools."
             },
         ],
         aboutUsStatsContent: 
