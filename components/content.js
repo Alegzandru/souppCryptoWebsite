@@ -58,16 +58,16 @@ export const globalContent = [
             heading2: "Наш опыт",
             subheading : "За 4 года анализа рынка, мы научились качественно предсказывать падение/рост криптовалют и акции. Цифры не лгут!",
             stat1:{
-                number : "1/5",
-                text: " средний R/R"
+                number : "1/3",
+                text: " стабильный К-К"
             },
             stat2:{
                 number : "543",
-                text: " правельных предикций"
+                text: " успешных прогноза"
             },
             stat3:{
-                number : "Умеренный",
-                text: " риск"
+                number : "Риск",
+                text: " выбираете сами"
             }
         },
         ourServicesContent:

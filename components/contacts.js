@@ -4,10 +4,10 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
 
-
 export function Contacts(props){
 
     const [emailSent, setEmailSent] = useState(false)
+    
     const [state, setState] = useState({
         name: "",
         email: "",

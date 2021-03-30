@@ -89,7 +89,7 @@ export function AboutUsStats(props){
                 <div className={styles.imgWrapper}>
                     <img className={styles.img} src="/samsung.png"></img>
                     <video autoPlay muted loop className={styles.video}>
-                        <source src="/TelegramVideo.mp4" type="video/mp4"/>
+                        <source src="/TelegramVideoCompressed.mp4" type="video/mp4"/>
                     </video>
                     {/* <video src={video}></video> */}
                 </div>

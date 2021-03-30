@@ -39,3 +39,12 @@ body{
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Futura PT custom Mediu';
+    src: url('/fonts/subset-FuturaPT-Medium.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPT-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
