@@ -299,7 +299,8 @@
         text-align: center;
 
         color: white;
-        /* font-family: Futura PT custom Book; */
+        font-family: Futura PT custom Book;
+        letter-spacing: 1px;
         margin-bottom: 20px;
         margin-top: 0px;
     }

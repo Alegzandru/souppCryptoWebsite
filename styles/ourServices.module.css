@@ -218,6 +218,9 @@
     .h1{
         font-size: 44px;
         line-height: 44px;
+
+        font-family: Futura PT custom Book; 
+        letter-spacing: 1px;
     }
     
     .servicesContainer{

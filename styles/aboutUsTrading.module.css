@@ -180,6 +180,8 @@
         font-size: 44px;
         line-height: 52px;
         margin-bottom: 40px;
+        font-family: Futura PT custom Book; 
+        letter-spacing: 1px;
     }
     
     .mainInfoWrapper{
