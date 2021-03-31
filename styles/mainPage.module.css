@@ -464,7 +464,7 @@
         width: 700px;
         height: 819px;
         transition: 1000ms;
-        margin-left: calc((100vw - 700px)/2 - 16px);
+        margin-left: calc((344px - 700px)/2);
         margin-top: -70px;
     
         left: 0px;
