@@ -1,6 +1,6 @@
 import styles from "../styles/testimonials.module.css"
 import React, { useState } from 'react';
-import {testimonialContent} from "./sliderContent"
+import {testimonialContentRu, testimonialContentEn} from "./sliderContent"
 import {globalContent} from "./content"
 
 
@@ -26,10 +26,18 @@ export function Testimonials(props){
                             <div className={styles.testimonialContentWrapper}>
                                 <div className={styles.testimonialPhotoMobile}></div>
                                 <div className={styles.testimonialName}>
-                                    {testimonialContent[slide].name}
+                                    {
+                                        props.lang == 0 ? 
+                                        testimonialContentRu[slide].name :
+                                        testimonialContentEn[slide].name
+                                    }
                                 </div>
                                 <div className={styles.testimonialContent}>
-                                    {testimonialContent[slide].text}
+                                    {
+                                        props.lang == 0 ? 
+                                        testimonialContentRu[slide].text :
+                                        testimonialContentEn[slide].text
+                                    }
                                 </div>
                                 <div className={styles.starsWrapper}>
                                     <img src="/greenStar.svg" className={styles.starImg}></img>
@@ -46,10 +54,18 @@ export function Testimonials(props){
                             <div className={styles.testimonialContentWrapper}>
                                 <div className={styles.testimonialPhotoMobile}></div>
                                 <div className={styles.testimonialName}>
-                                    {testimonialContent[slide+1].name}
+                                    {
+                                        props.lang == 0 ? 
+                                        testimonialContentRu[slide+1].name :
+                                        testimonialContentEn[slide+1].name
+                                    }
                                 </div>
                                 <div className={styles.testimonialContent}>
-                                    {testimonialContent[slide+1].text}
+                                    {
+                                        props.lang == 0 ? 
+                                        testimonialContentRu[slide+1].text :
+                                        testimonialContentEn[slide+1].text
+                                    }
                                 </div>
                                 <div className={styles.starsWrapper}>
                                     <img src="/greenStar.svg" className={styles.starImg}></img>
@@ -66,10 +82,18 @@ export function Testimonials(props){
                             <div className={styles.testimonialContentWrapper}>
                                 <div className={styles.testimonialPhotoMobile}></div>
                                 <div className={styles.testimonialName}>
-                                    {testimonialContent[slide+2].name}
+                                    {
+                                        props.lang == 0 ? 
+                                        testimonialContentRu[slide+2].name :
+                                        testimonialContentEn[slide+2].name
+                                    }
                                 </div>
                                 <div className={styles.testimonialContent}>
-                                    {testimonialContent[slide+2].text}
+                                    {
+                                        props.lang == 0 ? 
+                                        testimonialContentRu[slide+2].text :
+                                        testimonialContentEn[slide+2].text
+                                    }
                                 </div>
                                 <div className={styles.starsWrapper}>
                                     <img src="/greenStar.svg" className={styles.starImg}></img>

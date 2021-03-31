@@ -4,6 +4,8 @@ import Image from 'next/image'
 import {sliderPhotos} from "./sliderContent"
 import React, { useState } from 'react';
 import {globalContent} from "./content"
+import Fade from 'react-reveal/Fade';
+
 
 
 
@@ -91,38 +93,40 @@ export function AboutUsTrading(props){
                         </div>
                     </div>
                     <div className={styles.textDiv}>
-                        <h2 className={styles.h2}>
-                            {globalContent[props.lang].aboutUsTradingContent.heading2}
-                        </h2>
-                        <p className={styles.subheading}>
-                            {globalContent[props.lang].aboutUsTradingContent.subheading}
-                        </p>
-                        <div className={styles.statsWrapper}>
-                            <div className={styles.stat}>
-                                <span className={styles.statNumber}>
-                                    {globalContent[props.lang].aboutUsTradingContent.stat1.number}
-                                </span>
-                                <span className={styles.statText}>
-                                    {globalContent[props.lang].aboutUsTradingContent.stat1.text}
-                                </span>
+                        <Fade right cascade>
+                            <h2 className={styles.h2}>
+                                {globalContent[props.lang].aboutUsTradingContent.heading2}
+                            </h2>
+                            <p className={styles.subheading}>
+                                {globalContent[props.lang].aboutUsTradingContent.subheading}
+                            </p>
+                            <div className={styles.statsWrapper}>
+                                <div className={styles.stat}>
+                                    <span className={styles.statNumber}>
+                                        {globalContent[props.lang].aboutUsTradingContent.stat1.number}
+                                    </span>
+                                    <span className={styles.statText}>
+                                        {globalContent[props.lang].aboutUsTradingContent.stat1.text}
+                                    </span>
+                                </div>
+                                <div className={styles.stat}>
+                                    <span className={styles.statNumber}>
+                                        {globalContent[props.lang].aboutUsTradingContent.stat2.number}
+                                    </span>
+                                    <span className={styles.statText}>
+                                        {globalContent[props.lang].aboutUsTradingContent.stat2.text}
+                                    </span>
+                                </div>
+                                <div className={styles.stat}>
+                                    <span className={styles.statNumber}>
+                                        {globalContent[props.lang].aboutUsTradingContent.stat3.number}
+                                    </span>
+                                    <span className={styles.statText}>
+                                        {globalContent[props.lang].aboutUsTradingContent.stat3.text}
+                                    </span>
+                                </div>
                             </div>
-                            <div className={styles.stat}>
-                                <span className={styles.statNumber}>
-                                    {globalContent[props.lang].aboutUsTradingContent.stat2.number}
-                                </span>
-                                <span className={styles.statText}>
-                                    {globalContent[props.lang].aboutUsTradingContent.stat2.text}
-                                </span>
-                            </div>
-                            <div className={styles.stat}>
-                                <span className={styles.statNumber}>
-                                    {globalContent[props.lang].aboutUsTradingContent.stat3.number}
-                                </span>
-                                <span className={styles.statText}>
-                                    {globalContent[props.lang].aboutUsTradingContent.stat3.text}
-                                </span>
-                            </div>
-                        </div>
+                        </Fade>
                     </div>
                 </div>
             </div>

@@ -3,6 +3,8 @@ import Layout from "../components/layout"
 import Image from 'next/image'
 import React, { useState } from 'react';
 import {globalContent} from "./content"
+import Bounce from 'react-reveal/Bounce';
+
 
 
 export function OurServices(props){
@@ -43,14 +45,16 @@ export function OurServices(props){
                         href="https://t.me/joinchat/AAAAAEgPEa1HRUVe6vN8Gw"
                         className={styles.link}
                     >
-                        <div
-                            className={styles.button1}
-                            onMouseEnter={() => setHoveredButton1(true)}
-                            onMouseLeave={() => setHoveredButton1(false)}
-                            style={{color: hoveredButton1? "#AFDF9D" : "white"}}
-                        >
-                            {globalContent[props.lang].ourServicesContent.button}
-                        </div>
+                        <Bounce left>
+                            <div
+                                className={styles.button1}
+                                onMouseEnter={() => setHoveredButton1(true)}
+                                onMouseLeave={() => setHoveredButton1(false)}
+                                style={{color: hoveredButton1? "#AFDF9D" : "white"}}
+                            >
+                                {globalContent[props.lang].ourServicesContent.button}
+                            </div>
+                        </Bounce>
                     </a>
                 </div>
                 <div className={styles.serviceWrapper}>
@@ -77,14 +81,16 @@ export function OurServices(props){
                         href="https://t.me/joinchat/AAAAAEgPEa1HRUVe6vN8Gw"
                         className={styles.link}
                     >
-                        <div 
-                            className={styles.button2}
-                            onMouseEnter={() => setHoveredButton2(true)}
-                            onMouseLeave={() => setHoveredButton2(false)}
-                            style={{color: hoveredButton2? "#AFDF9D" : "white"}}
-                        >
-                            {globalContent[props.lang].ourServicesContent.button}
-                        </div>
+                        <Bounce left>
+                            <div 
+                                className={styles.button2}
+                                onMouseEnter={() => setHoveredButton2(true)}
+                                onMouseLeave={() => setHoveredButton2(false)}
+                                style={{color: hoveredButton2? "#AFDF9D" : "white"}}
+                            >
+                                {globalContent[props.lang].ourServicesContent.button}
+                            </div>
+                        </Bounce>
                     </a>
                 </div>
             </div>

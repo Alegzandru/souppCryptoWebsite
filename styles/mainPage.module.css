@@ -299,7 +299,7 @@
         text-align: center;
 
         color: white;
-        font-family: Futura PT custom Book;
+        /* font-family: Futura PT custom Book; */
         margin-bottom: 20px;
         margin-top: 0px;
     }
@@ -310,7 +310,7 @@
         text-align: center;
         position: relative;
         z-index: 2;
-        font-family: Futura PT custom Book;
+        /* font-family: Futura PT custom Book; */
     }
 
     .h2Clicked{
@@ -319,7 +319,7 @@
         text-align: center;
         position: relative;
         z-index: 2;
-        font-family: Futura PT custom Book;
+        /* font-family: Futura PT custom Book; */
     }
     
     .smallIconsWrapper{

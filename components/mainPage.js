@@ -71,13 +71,13 @@ export function MainPage(props){
                                     onMouseEnter = { () => setContent(1)}
                                 >
                                     <img 
-                                        src="/prediction.svg" className={styles.smallLogo}
+                                        src="/souppIcons/prediction.png" className={styles.smallLogo}
                                     ></img>
                                     <img 
-                                        src="/futures.svg" className={styles.smallLogo}
+                                        src="/souppIcons/futures.png" className={styles.smallLogo}
                                     ></img>
                                     <img 
-                                        src="/signals.svg" className={styles.smallLogo}
+                                        src="/souppIcons/signals.png" className={styles.smallLogo}
                                         style={{
                                             marginLeft: "40px",
                                             marginTop: "-40px"
@@ -97,13 +97,13 @@ export function MainPage(props){
                                     onMouseEnter = { () => setContent(2)}
                                 >
                                     <img 
-                                        src="/papers.svg" className={styles.smallLogo}
+                                        src="/souppIcons/papers.png" className={styles.smallLogo}
                                     ></img>
                                     <img 
-                                        src="/commodities.svg" className={styles.smallLogo}
+                                        src="/souppIcons/commodities.png" className={styles.smallLogo}
                                     ></img>
                                     <img 
-                                        src="/fundamental.svg" className={styles.smallLogo}
+                                        src="/souppIcons/fundamental.png" className={styles.smallLogo}
                                         style={{
                                             marginLeft: "40px",
                                             marginTop: "-40px"
@@ -124,13 +124,13 @@ export function MainPage(props){
                                     onMouseEnter = { () => setContent(3)}
                                 >
                                     <img 
-                                        src="/market.svg" className={styles.smallLogo}
+                                        src="/souppIcons/market.png" className={styles.smallLogo}
                                     ></img>
                                     <img 
-                                        src="/digest.svg" className={styles.smallLogo}
+                                        src="/souppIcons/digest.png" className={styles.smallLogo}
                                     ></img>
                                     <img 
-                                        src="/news.svg" className={styles.smallLogo}
+                                        src="/souppIcons/news.png" className={styles.smallLogo}
                                         style={{
                                             marginLeft: "40px",
                                             marginTop: "-40px"
@@ -150,13 +150,13 @@ export function MainPage(props){
                                     onMouseEnter = { () => setContent(4)}
                                 >
                                     <img 
-                                        src="/library.svg" className={styles.smallLogo}
+                                        src="/souppIcons/library.png" className={styles.smallLogo}
                                     ></img>
                                     <img 
-                                        src="/videos.svg" className={styles.smallLogo}
+                                        src="/souppIcons/videos.png" className={styles.smallLogo}
                                     ></img>
                                     <img 
-                                        src="/tools.svg" className={styles.smallLogo}
+                                        src="/souppIcons/tools.png" className={styles.smallLogo}
                                         style={{
                                             marginLeft: "40px",
                                             marginTop: "-40px"
@@ -218,13 +218,13 @@ export function MainPage(props){
                                         onMouseEnter = { () => setContent(1)}
                                     >
                                         <img 
-                                            src="/prediction.svg" className={styles.smallLogo}
+                                            src="/souppIcons/prediction.png" className={styles.smallLogo}
                                         ></img>
                                         <img 
-                                            src="/futures.svg" className={styles.smallLogo}
+                                            src="/souppIcons/futures.png" className={styles.smallLogo}
                                         ></img>
                                         <img 
-                                            src="/signals.svg" className={styles.smallLogo}
+                                            src="/souppIcons/signals.png" className={styles.smallLogo}
                                             style={{
                                                 marginLeft: "40px",
                                                 marginTop: "-40px"
@@ -244,13 +244,13 @@ export function MainPage(props){
                                         onMouseEnter = { () => setContent(2)}
                                     >
                                         <img 
-                                            src="/papers.svg" className={styles.smallLogo}
+                                            src="/souppIcons/papers.png" className={styles.smallLogo}
                                         ></img>
                                         <img 
-                                            src="/commodities.svg" className={styles.smallLogo}
+                                            src="/souppIcons/commodities.png" className={styles.smallLogo}
                                         ></img>
                                         <img 
-                                            src="/fundamental.svg" className={styles.smallLogo}
+                                            src="/souppIcons/fundamental.png" className={styles.smallLogo}
                                             style={{
                                                 marginLeft: "40px",
                                                 marginTop: "-40px"
@@ -271,13 +271,13 @@ export function MainPage(props){
                                         onMouseEnter = { () => setContent(3)}
                                     >
                                         <img 
-                                            src="/market.svg" className={styles.smallLogo}
+                                            src="/souppIcons/market.png" className={styles.smallLogo}
                                         ></img>
                                         <img 
-                                            src="/digest.svg" className={styles.smallLogo}
+                                            src="/souppIcons/digest.png" className={styles.smallLogo}
                                         ></img>
                                         <img 
-                                            src="/news.svg" className={styles.smallLogo}
+                                            src="/souppIcons/news.png" className={styles.smallLogo}
                                             style={{
                                                 marginLeft: "40px",
                                                 marginTop: "-40px"
@@ -297,13 +297,13 @@ export function MainPage(props){
                                         onMouseEnter = { () => setContent(4)}
                                     >
                                         <img 
-                                            src="/library.svg" className={styles.smallLogo}
+                                            src="/souppIcons/library.png" className={styles.smallLogo}
                                         ></img>
                                         <img 
-                                            src="/videos.svg" className={styles.smallLogo}
+                                            src="/souppIcons/videos.png" className={styles.smallLogo}
                                         ></img>
                                         <img 
-                                            src="/tools.svg" className={styles.smallLogo}
+                                            src="/souppIcons/tools.png" className={styles.smallLogo}
                                             style={{
                                                 marginLeft: "40px",
                                                 marginTop: "-40px"
@@ -344,25 +344,25 @@ export function MainPage(props){
                                     display : clickedMobile ? "none" : hoveredLogo ? "none" : "flex"
                                 }}
                             >
-                                <img src="/commodities.svg" className={styles.smallIcon}></img>
-                                <img src="/digest.svg" className={styles.smallIcon}></img>
-                                <img src="/discuss.svg" className={styles.smallIcon}></img>
-                                <img src="/fundamental.svg" className={styles.smallIcon}></img>
-                                <img src="/futures.svg" className={styles.smallIcon}></img>
-                                <img src="/invest.svg" className={styles.smallIcon}></img>
-                                <img src="/library.svg" className={styles.smallIcon}></img>
-                                <img src="/liveTrade.svg" className={styles.smallIcon}></img>
-                                <img src="/market.svg" className={styles.smallIcon}></img>
-                                <img src="/news.svg" className={styles.smallIcon}></img>
-                                <img src="/papers.svg" className={styles.smallIcon}></img>
-                                <img src="/prediction.svg" className={styles.smallIcon}></img>
-                                <img src="/signals.svg" className={styles.smallIcon}></img>
-                                <img src="/videos.svg" className={styles.smallIcon}></img>
-                                <img src="/commodities.svg" className={styles.smallIcon}></img>
-                                <img src="/digest.svg" className={styles.smallIcon}></img>
-                                <img src="/discuss.svg" className={styles.smallIcon}></img>
-                                <img src="/fundamental.svg" className={styles.smallIcon}></img>
-                                <img src="/futures.svg" className={styles.smallIcon}></img>
+                                <img src="/souppIcons/commodities.png" className={styles.smallIcon}></img>
+                                <img src="/souppIcons/digest.png" className={styles.smallIcon}></img>
+                                <img src="/souppIcons/discuss.png" className={styles.smallIcon}></img>
+                                <img src="/souppIcons/fundamental.png" className={styles.smallIcon}></img>
+                                <img src="/souppIcons/futures.png" className={styles.smallIcon}></img>
+                                <img src="/souppIcons/invest.png" className={styles.smallIcon}></img>
+                                <img src="/souppIcons/library.png" className={styles.smallIcon}></img>
+                                <img src="/souppIcons/liveTrade.png" className={styles.smallIcon}></img>
+                                <img src="/souppIcons/market.png" className={styles.smallIcon}></img>
+                                <img src="/souppIcons/news.png" className={styles.smallIcon}></img>
+                                <img src="/souppIcons/papers.png" className={styles.smallIcon}></img>
+                                <img src="/souppIcons/prediction.png" className={styles.smallIcon}></img>
+                                <img src="/souppIcons/signals.png" className={styles.smallIcon}></img>
+                                <img src="/souppIcons/videos.png" className={styles.smallIcon}></img>
+                                <img src="/souppIcons/commodities.png" className={styles.smallIcon}></img>
+                                <img src="/souppIcons/digest.png" className={styles.smallIcon}></img>
+                                <img src="/souppIcons/discuss.png" className={styles.smallIcon}></img>
+                                <img src="/souppIcons/fundamental.png" className={styles.smallIcon}></img>
+                                <img src="/souppIcons/futures.png" className={styles.smallIcon}></img>
                                 {/* <img src="/invest.svg" className={styles.smallIcon}></img> */}
                             </div>
                         </div>

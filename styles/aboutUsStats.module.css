@@ -1,6 +1,6 @@
 .wrapper{
     height: 900px;
-    background-color: #2D3E50;
+    background-color: #253D57;
 }
 
 .container{
@@ -67,7 +67,7 @@
 .pBlue{
     font-size: 35px;
     font-family: Futura PT custom Demi;
-    color: #2D3E50;
+    color: #253D57;
 
     margin-top: 0px;
     margin-bottom: 0px;
@@ -90,7 +90,7 @@
 .button{
     width: 300px;
     height: 60px;
-    background-color: #2D3E50;
+    background-color: #253D57;
     border: 2px solid #AFDF9D;
     box-shadow: 6px 6px 0px #AFDF9D;
     border-radius: 4px;
@@ -110,25 +110,25 @@
 
 /* unvisited link */
 .link:link {
-    color: #2D3E50;
+    color: #253D57;
     text-decoration: none;
 }
 
 /* visited link */
 .link:visited {
-    color: #2D3E50;
+    color: #253D57;
     text-decoration: none;
 }
 
 /* mouse over link */
 .link:hover {
-    color: #2D3E50;
+    color: #253D57;
     text-decoration: none;
 }
 
 /* selected link */
 .link:active {
-    color: #2D3E50;
+    color: #253D57;
     text-decoration: none;
 }
 

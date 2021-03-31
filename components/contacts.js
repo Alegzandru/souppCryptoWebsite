@@ -2,6 +2,7 @@ import styles from "../styles/contacts.module.css"
 import {globalContent} from "./content"
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import Flip from 'react-reveal/Flip';
 
 
 export function Contacts(props){
@@ -161,12 +162,14 @@ export function Contacts(props){
                                     value={state.message}                        
                                     style={{height: "120px"}}
                                 ></input>
-                                <input 
-                                    className={styles.button}
-                                    type="submit"
-                                    placeholder={globalContent[props.lang].contactsContent.button}
-                                >
-                                </input>
+                                <Flip left>
+                                    <input 
+                                        className={styles.button}
+                                        type="submit"
+                                        placeholder={globalContent[props.lang].contactsContent.button}
+                                    >
+                                    </input>
+                                </Flip>
                             </form>
                         </div>
                     </div>
