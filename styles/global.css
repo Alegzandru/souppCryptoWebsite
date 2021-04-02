@@ -14,7 +14,7 @@ body{
 }
 
 @font-face {
-    font-family: 'Futura PT custom Demi';
+    font-family: 'Futura PT custom Demi2';
     src: url('/fonts/subset-FuturaPT-Demi.woff2') format('woff2'),
         url('/fonts/subset-FuturaPT-Demi.woff') format('woff');
     font-weight: 500;
@@ -23,7 +23,7 @@ body{
 }
 
 @font-face {
-    font-family: 'Futura PT custom Heavy';
+    font-family: 'Futura PT custom Heavy2';
     src: url('/fonts/subset-FuturaPT-Heavy.woff2') format('woff2'),
         url('/fonts/subset-FuturaPT-Heavy.woff') format('woff');
     font-weight: 900;
@@ -32,7 +32,7 @@ body{
 }
 
 @font-face {
-    font-family: 'Futura PT custom Book';
+    font-family: 'Futura PT custom Book2';
     src: url('/fonts/subset-FuturaPT-Book.woff2') format('woff2'),
         url('/fonts/subset-FuturaPT-Book.woff') format('woff');
     font-weight: normal;
@@ -41,10 +41,50 @@ body{
 }
 
 @font-face {
-    font-family: 'Futura PT custom Mediu';
+    font-family: 'Futura PT custom Mediu2';
     src: url('/fonts/subset-FuturaPT-Medium.woff2') format('woff2'),
         url('/fonts/subset-FuturaPT-Medium.woff') format('woff');
     font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom Heavy';
+    src: url('/fonts/FuturaNewHeavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom Demi';
+    src: url('/fonts/FuturaNewDemi.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom Mediu';
+    src: url('/fonts/FuturaNewMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom Book';
+    src: url('/fonts/FuturaNewBook.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom Light';
+    src: url('/fonts/FuturaNewLight.woff') format('woff');
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
