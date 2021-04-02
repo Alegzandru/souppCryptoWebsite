@@ -26,7 +26,7 @@ export function AboutUsStats(props){
         <div className={styles.wrapper}>
             <div name="stats" className={styles.container}>
                 <div className={styles.textDivWrapper}>
-                    <Fade left cascade>
+                    <Fade left>
                         <h1 className={styles.h1}>
                             {globalContent[props.lang].aboutUsStatsContent.heading}
                         </h1>

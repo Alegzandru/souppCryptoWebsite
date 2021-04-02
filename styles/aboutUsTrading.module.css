@@ -163,7 +163,7 @@
 
 @media screen and (max-width: 992px){
     .wrapper{
-        height: 1000px;
+        height: auto;
     }
     
     .container{
@@ -180,7 +180,7 @@
         font-size: 44px;
         line-height: 52px;
         margin-bottom: 40px;
-        font-family: Futura PT custom Book; 
+        font-family: Futura PT custom Demi; 
         letter-spacing: 1px;
     }
     
@@ -269,7 +269,7 @@
 
 @media screen and (max-width: 524px){
     .wrapper{
-        height: 1000px;
+        height: auto;
     }
     
     .container{

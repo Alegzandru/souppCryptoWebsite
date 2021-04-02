@@ -1,6 +1,7 @@
 .wrapper{
     height: 900px;
-    background-color: #253D57;
+    /* background-color: #253D57; */
+    background-color: #2D3E50;
 }
 
 .container{
@@ -180,7 +181,7 @@
         font-size: 44px;
         margin-bottom: 20px;
         text-align: center;
-        font-family: Futura PT custom Book; 
+        font-family: Futura PT custom Demi; 
         letter-spacing: 1px;
     }
     

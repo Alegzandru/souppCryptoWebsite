@@ -93,7 +93,7 @@ export function AboutUsTrading(props){
                         </div>
                     </div>
                     <div className={styles.textDiv}>
-                        <Fade right cascade>
+                        <Fade right>
                             <h2 className={styles.h2}>
                                 {globalContent[props.lang].aboutUsTradingContent.heading2}
                             </h2>
