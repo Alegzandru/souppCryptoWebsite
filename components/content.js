@@ -104,7 +104,7 @@ export const globalContent = [
             button : "Присоединится"
         },
         newMainPageContent:{
-            heading: "МЫ предлагаем лучшие торговые советы",
+            heading: "Мы предлагаем лучшие торговые советы",
             advantages : [
                 {
                     heading : "Ежедневный анализ рынка",
