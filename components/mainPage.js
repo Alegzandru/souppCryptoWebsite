@@ -2,10 +2,13 @@ import styles from "../styles/mainPage.module.css"
 import Layout from "../components/layout"
 import { useState } from "react"
 import {globalContent} from "./content"
+import Fade from 'react-reveal/Fade';
+
 
 export function MainPage(props){
 
     const [hoveredLogo, setHoveredLogo] = useState(false)
+    const [hoveredLogo2, setHoveredLogo2] = useState(false)
     const [showLogo, setShowLogo] = useState(true)
     const [scrolledBy, setScrolledBy] = useState(false)
     const [clickedMobile, setClickedMobile] = useState(false)
@@ -29,17 +32,26 @@ export function MainPage(props){
     return(
         // <Layout>
             <div className={styles.mainPageWrapper}>
-                <div name="mainPage" className={styles.mainPageContainer}>
+                <div 
+                    name="mainPage" 
+                    className={styles.mainPageContainer}
+                    style={{
+                        display : hoveredLogo2 ? "block" : "flex",
+                        paddingTop : hoveredLogo2 ? "60px" : "120px"
+                    }}
+                >
                     <div 
                         className={styles.mainLogoWrapper}
                         onMouseEnter = { () => {
                             setHoveredLogo(true)
-                            // setTimeout( () => hoveredLogo ? setShowLogo(false) : undefined, 2000)
+                            setTimeout(() => setHoveredLogo2(true), 1200)
                         }}
-                        onMouseLeave = { () => {
-                            setHoveredLogo(false)
-                            setContent(0)
-                            // setShowLogo(true)
+                        // onMouseLeave = { () => {
+                        //     setHoveredLogo(false)
+                        //     setContent(0)
+                        // }}
+                        style={{
+                            display : hoveredLogo2? "none" : ""
                         }}
                     >
                         <img 
@@ -58,7 +70,7 @@ export function MainPage(props){
                             />
                         </div>
 
-                        <div 
+                        {/* <div 
                             className={styles.smallerLogosWrapper}
                             style={{
                                 display : hoveredLogo ? "flex" : "none"
@@ -172,10 +184,15 @@ export function MainPage(props){
                                 </div>
                             </div>
 
-                        </div>
+                        </div>*/}
 
                     </div>
-                    <div className={styles.textDivWrapper}>
+                    <div 
+                        className={styles.textDivWrapper}
+                        style={{
+                            display : hoveredLogo2? "none" : "flex"
+                        }}
+                    >
                         <h1 className={styles.h1}>
                             {globalContent[props.lang].mainPageContent[content].heading}
                             {/* {mainPageContent[content].heading} */}
@@ -187,16 +204,18 @@ export function MainPage(props){
                                 className={clickedMobile ? styles.mainLogoMobileClicked : styles.mainLogoMobile} 
                                 src="/SOUPPlogoSquare2.svg"
                                 onClick={ () => {
-                                    setClickedMobile(!clickedMobile)
+                                    setClickedMobile(true)
                                     setContent(0)
+                                    setTimeout(() => setHoveredLogo2(true), 1500)
                                 }}
                             ></img>
                             <div
                                 className={styles.scrollLogoMobile}
                                 style={{display : clickedMobile ? "none" : "block"}}
                                 onClick={ () => {
-                                    setClickedMobile(!clickedMobile)
+                                    setClickedMobile(true)
                                     setContent(0)
+                                    setTimeout(() => setHoveredLogo2(true), 1500)
                                 }}
                             >
                                 <img
@@ -205,7 +224,7 @@ export function MainPage(props){
                                 />
                             </div>
 
-                            <div 
+                            {/* <div 
                                 className={styles.smallerLogosWrapperMobile}
                                 style={{
                                     display : clickedMobile ? "flex" : "none"
@@ -319,9 +338,15 @@ export function MainPage(props){
                                     </div>
                                 </div>
 
-                            </div>
+                            </div>*/}
                         </div>
-                        <h2 className={clickedMobile? styles.h2Clicked : styles.h2}>
+                        <h2 
+                            // className={clickedMobile? styles.h2Clicked : styles.h2}
+                            className={styles.h2}
+                            style={{
+                                display : clickedMobile ? "none" : "block"
+                            }}
+                        >
                             {/* {globalContent[props.lang].mainPageContent[content].subheading} */}
                             <div>
                                 {
@@ -337,8 +362,13 @@ export function MainPage(props){
                                 {globalContent[props.lang].mainPageContent[content].chat3}
                             </div>
                         </h2>
-                        <div className={styles.smallIconsContainer}>
-                            <div 
+                        <div 
+                            className={styles.smallIconsContainer}
+                            style={{
+                                display: "none"
+                            }}
+                        >
+                            {/* <div 
                                 className={styles.smallIconsWrapper}
                                 style={{
                                     display : clickedMobile ? "none" : hoveredLogo ? "none" : "flex"
@@ -363,8 +393,110 @@ export function MainPage(props){
                                 <img src="/souppIcons/discuss.png" className={styles.smallIcon}></img>
                                 <img src="/souppIcons/fundamental.png" className={styles.smallIcon}></img>
                                 <img src="/souppIcons/futures.png" className={styles.smallIcon}></img>
-                                {/* <img src="/invest.svg" className={styles.smallIcon}></img> */}
-                            </div>
+                            </div> */}
+                        </div>
+                    </div>
+
+                    <h1 
+                        className={styles.hiddenH1}
+                        style={{
+                            display : hoveredLogo2? "block" : "none"
+                        }}
+                    >
+                        {globalContent[props.lang].newMainPageContent.heading}
+                    </h1>
+                    <div 
+                        className={styles.advantagesContainer}
+                        style={{
+                            display : hoveredLogo2? "flex" : "none"
+                        }}
+                    >
+                        <div className={styles.advantagesColumn}>
+                            <Fade bottom>
+                                <div className={styles.advantage}>
+                                    <img className={styles.advantageImg} src="/mainPageIcon1.svg"></img>
+                                    <div className={styles.advantageTextContainer}>
+                                        <h2 className={styles.advantageHeader}>
+                                            {globalContent[props.lang].newMainPageContent.advantages[0].heading}
+                                        </h2>
+                                        <div className={styles.advantageDescription}>
+                                            {globalContent[props.lang].newMainPageContent.advantages[0].subheading}
+                                        </div>
+                                    </div>
+                                </div>
+                            </Fade>
+
+                            <Fade bottom>
+                                <div className={styles.advantage}>
+                                    <img className={styles.advantageImg} src="/mainPageIcon3.svg"></img>
+                                    <div className={styles.advantageTextContainer}>
+                                        <h2 className={styles.advantageHeader}>
+                                            {globalContent[props.lang].newMainPageContent.advantages[1].heading}
+                                        </h2>
+                                        <div className={styles.advantageDescription}>
+                                            {globalContent[props.lang].newMainPageContent.advantages[1].subheading}
+                                        </div>
+                                    </div>
+                                </div>
+                            </Fade>
+
+                            <Fade bottom>
+                                <div className={styles.advantage}>
+                                    <img className={styles.advantageImg} src="/mainPageIcon5.svg"></img>
+                                    <div className={styles.advantageTextContainer}>
+                                        <h2 className={styles.advantageHeader}>
+                                            {globalContent[props.lang].newMainPageContent.advantages[2].heading}
+                                        </h2>
+                                        <div className={styles.advantageDescription}>
+                                            {globalContent[props.lang].newMainPageContent.advantages[2].subheading}
+                                        </div>
+                                    </div>
+                                </div>
+                            </Fade>
+                        </div>
+
+                        <div className={styles.advantagesColumn}>
+                            <Fade bottom>
+                                <div className={styles.advantage}>
+                                    <img className={styles.advantageImg} src="/mainPageIcon2.svg"></img>
+                                    <div className={styles.advantageTextContainer}>
+                                        <h2 className={styles.advantageHeader}>
+                                            {globalContent[props.lang].newMainPageContent.advantages[3].heading}
+                                        </h2>
+                                        <div className={styles.advantageDescription}>
+                                            {globalContent[props.lang].newMainPageContent.advantages[3].subheading}
+                                        </div>
+                                    </div>
+                                </div>
+                            </Fade>
+
+                            <Fade bottom>
+                                <div className={styles.advantage}>
+                                    <img className={styles.advantageImg} src="/mainPageIcon4.svg"></img>
+                                    <div className={styles.advantageTextContainer}>
+                                        <h2 className={styles.advantageHeader}>
+                                            {globalContent[props.lang].newMainPageContent.advantages[4].heading}
+                                        </h2>
+                                        <div className={styles.advantageDescription}>
+                                            {globalContent[props.lang].newMainPageContent.advantages[4].subheading}
+                                        </div>
+                                    </div>
+                                </div>
+                            </Fade>
+
+                            <Fade bottom> 
+                                <div className={styles.advantage}>
+                                    <img className={styles.advantageImg} src="/mainPageIcon6.svg"></img>
+                                    <div className={styles.advantageTextContainer}>
+                                        <h2 className={styles.advantageHeader}>
+                                            {globalContent[props.lang].newMainPageContent.advantages[5].heading}
+                                        </h2>
+                                        <div className={styles.advantageDescription}>
+                                            {globalContent[props.lang].newMainPageContent.advantages[5].subheading}
+                                        </div>
+                                    </div>
+                                </div>
+                            </Fade>
                         </div>
                     </div>
                 </div>

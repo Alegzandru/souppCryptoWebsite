@@ -1,5 +1,5 @@
 .mainPageWrapper{
-    height : 852px;
+    height : auto;
     background-color: #2D3E50;
 }
 
@@ -70,11 +70,13 @@
 }
 
 .mainLogoHover{
-    width: 2000px;
-    height: 2340px;
-    margin-left: calc((460px - 1800px)/2);
-    margin-top: calc((540px - 2340px)/2);
-    transition: 1000ms;
+    /* width: 2000px;
+    height: 2340px; */
+    width: 3500px;
+    height: 4500px;
+    margin-left: calc((460px - 3500px)/2);
+    margin-top: calc((540px - 4500px)/2);
+    transition: 1200ms;
 }
 
 .mainLogoWrapper{
@@ -121,7 +123,7 @@
     color: #E5E5E5;
     font-family: Futura PT custom Demi;
     margin-top: 0px;
-    margin-bottom: 70px;
+    /* margin-bottom: 70px; */
 }
 
 .h2Clicked{
@@ -233,11 +235,11 @@
     position: relative;
     z-index: 0;
 
-    width: 700px;
-    height: 819px;
-    transition: 1000ms;
-    margin-left: -88px;
-    margin-top: -70px;
+    width: 2100px;
+    height: 2688px;
+    transition: 1500ms;
+    margin-left: calc((524px - 2100px)/2);
+    margin-top: -1150px;
 
     left: 0px;
 }
@@ -249,6 +251,74 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+}
+
+.advantagesContainer{
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.advantagesColumn{
+    width: 460px;
+}
+
+.advantage{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.advantageImg{
+    width: 140px;
+    height: 140px;
+
+    margin-top: 20px;
+}
+
+.advantageTextContainer{
+    width: 100%;
+    margin-left: 20px;
+}
+
+.advantageHeader{
+    font-family: Futura PT custom Demi;
+    font-size: 30px;
+    line-height: 30px;
+    color: white;
+    margin-top: 0px;
+}
+
+.advantageDescription{
+    font-family: Futura PT custom Book;
+    font-size: 20px;
+    line-height: 26px;
+    color: #E5E5E5;
+}
+
+.hiddenH1{
+    font-family: Futura PT custom Demi;
+    font-size: 57px;
+    line-height: 57px;
+    color: white;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
+    text-align: center;
+
+    margin-bottom: 60px;
 }
 
 @media screen and (max-width: 992px){
@@ -265,6 +335,7 @@
         padding-top: 110px;
         padding-left: 20px;
         padding-right: 20px;
+        height: auto;
 
         max-width: 524px;
         margin-left: auto;
@@ -402,6 +473,74 @@
         }
     } */
 
+    .advantagesContainer{
+        width: 524px;
+        margin-left: auto;
+        margin-right: auto;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    .advantagesColumn{
+        width: 100%;
+    }
+    
+    .advantage{
+        width: 100%;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        
+        height: 139px;
+        margin-bottom: 20px;
+    }
+    
+    .advantageImg{
+        width: 119px;
+        height: 119px;
+    
+        margin-top: 20px;
+    }
+    
+    .advantageTextContainer{
+        width: 100%;
+        margin-left: 20px;
+    }
+    
+    .advantageHeader{
+        font-family: Futura PT custom Demi;
+        font-size: 22px;
+        line-height: 22px;
+        color: white;
+        margin-top: 0px;
+    }
+    
+    .advantageDescription{
+        font-family: Futura PT custom Book;
+        font-size: 18px;
+        line-height: 24px;
+        color: #E5E5E5;
+    }
+    
+    .hiddenH1{
+        font-family: Futura PT custom Demi;
+        font-size: 44px;
+        line-height: 44px;
+        color: white;
+    
+        margin-left: auto;
+        margin-right: auto;
+        width: 524px;
+        text-align: center;
+    
+        margin-bottom: 60px;
+    }
+
 }
 
 @media screen and (max-width: 524px){
@@ -461,11 +600,11 @@
         position: relative;
         z-index: 0;
     
-        width: 700px;
-        height: 819px;
-        transition: 1000ms;
-        margin-left: calc((344px - 700px)/2);
-        margin-top: -70px;
+        width: 1500px;
+        height: 1920px;
+        transition: 1500ms;
+        margin-left: calc((344px - 1500px)/2);
+        margin-top: -850px;
     
         left: 0px;
     }
@@ -511,4 +650,73 @@
             margin-left: -857px;
         }
     }
+
+    .advantagesContainer{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    .advantagesColumn{
+        width: 100%;
+    }
+    
+    .advantage{
+        width: 100%;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        
+        height: auto;
+        margin-bottom: 30px;
+    }
+    
+    .advantageImg{
+        width: 104px;
+        height: 104px;
+    
+        margin-top: 20px;
+    }
+    
+    .advantageTextContainer{
+        width: 100%;
+        margin-left: 16px;
+    }
+    
+    .advantageHeader{
+        font-family: Futura PT custom Demi;
+        font-size: 22px;
+        line-height: 22px;
+        color: white;
+        margin-top: 0px;
+    }
+    
+    .advantageDescription{
+        font-family: Futura PT custom Book;
+        font-size: 18px;
+        line-height: 24px;
+        color: #E5E5E5;
+    }
+    
+    .hiddenH1{
+        font-family: Futura PT custom Demi;
+        font-size: 32px;
+        line-height: 32px;
+        color: white;
+    
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        text-align: center;
+    
+        margin-bottom: 60px;
+    }
+
 }

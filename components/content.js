@@ -102,6 +102,35 @@ export const globalContent = [
             link4 : "Рекомендации",
             link5 : "Контакты",
             button : "Присоединится"
+        },
+        newMainPageContent:{
+            heading: "МЫ предлагаем лучшие торговые советы",
+            advantages : [
+                {
+                    heading : "Ежедневный анализ рынка",
+                    subheading : "Ежедневно получайте подробный обзор рынка, а также наши мысли о потенциальных движениях цен.",
+                },
+                {
+                    heading : "Аналитическое образование",
+                    subheading: "Большой пакет материалов, в котором рассказывается не только об основах технического анализа, но и об эксклюзивных стратегиях, которые помогут вам реально зарабатывать на торговле."
+                },
+                {
+                    heading: "Сделки в реальном времени",
+                    subheading: "Получайте мгновенную информацию о сделках, открытых нашими аналитиками, и следите за ними в полностью автоматизированном режиме."
+                },
+                {
+                    heading : "Управление рисками",
+                    subheading : "Узнайте, как создать идеальную настройку для вашей торговли: где разместить стоп-лосс, какой процент от депозита инвестировать и т. Д.",
+                },
+                {
+                    heading: "Профессиональные инструменты",
+                    subheading: "Получите массу ботов и полезных сервисов, которые предоставляют чрезвычайно важные данные для совершения прибыльных сделок."
+                },
+                {
+                    heading: "Материалы по психологии",
+                    subheading: "Одна из самых важных вещей для хорошего трейдера - это контроль ума. Узнайте, как контролировать свои эмоции в решающие моменты."
+                }
+            ]
         }
     },
     {
@@ -207,6 +236,35 @@ export const globalContent = [
             link4 : "Testimonials",
             link5 : "Contacts",
             button : "Join Telegram"
+        },
+        newMainPageContent:{
+            heading : "We offer the best trading consultance",
+            advantages : [
+                {
+                    heading : "Daily Market Analysis",
+                    subheading : "Receive a detailed market review as well as our thoughts about potential price movements on a daily basis.",
+                },
+                {
+                    heading : "Analysis Education",
+                    subheading : "A large pack of materials which tells you not only about technical analysis basics, but about exclusive strategies which will help you to actually earn on trading.",
+                },
+                {
+                    heading : "Regular Live Trades",
+                    subheading: "Receive an instant information about trades our analysts open and follow them on a fully automated basis."
+                },
+                {
+                    heading: "Risk management",
+                    subheading: "Learn how to build a perfect setup for your trade: where to place stop loss, what percentage from deposit to invest etc."
+                },
+                {
+                    heading: "Professional Tools",
+                    subheading: "Get tons of bots and useful services which provide an extremely important data for making profitable trades."
+                },
+                {
+                    heading: "Psychology Materials",
+                    subheading: "One of the most important things for a good trader is mind-control. Learn how to control your emotions at crucial moments."
+                }
+            ]
         }
     }
 ]
