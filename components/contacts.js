@@ -166,7 +166,7 @@ export function Contacts(props){
                                     <input 
                                         className={styles.button}
                                         type="submit"
-                                        placeholder={globalContent[props.lang].contactsContent.button}
+                                        value={globalContent[props.lang].contactsContent.button}
                                     >
                                     </input>
                                 </Flip>
