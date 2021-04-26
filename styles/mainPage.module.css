@@ -4,7 +4,7 @@
 }
 
 .mainPageContainer{
-    height: 900px;
+    height: auto;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -19,10 +19,103 @@
     width: 531px; */
     margin-left: -73px;
     transition: 1000ms;
-    animation: rotateLogo 30s linear infinite;
+    animation: rotateLogo 24s linear infinite;
 
     position: relative;
     z-index: 0;
+}
+
+.clockImg{
+    position: relative;
+    width: 900px;
+    height: 900px;
+
+    margin-top: -780px;
+    margin-left: -230px;
+
+    opacity: 0.5;
+}
+
+.location1{
+    position: relative;
+    /* margin-top: -520px;
+    margin-left: 650px; */
+    margin-top: -500px;
+    margin-left: 320px;
+
+    /* animation: activeLocation1 30s linear infinite; */
+}
+
+.location2{
+    position: relative;
+    /* margin-top: -520px;
+    margin-left: 650px; */
+    margin-top: -120px;
+    margin-left: 60px;
+}
+
+.location3{
+    position: relative;
+    /* margin-top: -520px;
+    margin-left: 650px; */
+    margin-top: -250px;
+    margin-left: 200px;
+}
+
+.location4{
+    position: relative;
+    /* margin-top: -520px;
+    margin-left: 650px; */
+    margin-top: 140px;
+    margin-left: 200px;
+}
+
+.locationWrapper{
+    width: 80px;
+    height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-size: 16px;
+    font-family: Futura PT custom Book;
+    color: #E5E5E5;
+
+    opacity: 0.2;
+    transition: 300ms;
+}
+
+.locationWrapperActive{
+    width: 80px;
+    height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-size: 16px;
+    font-family: Futura PT custom Book;
+    color: #E5E5E5;
+
+    opacity: 1;
+    transition: 300ms;
+}
+
+.locationImg{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.open{
+    color: green;
+}
+
+.closed{
+    color: red;
 }
 
 @keyframes rotateLogo {
@@ -34,11 +127,23 @@
     }
 }
 
+@keyframes activeLocation1 {
+    0%{
+        opacity: 0.2;
+    }
+    12.5%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.2;
+    }
+}
+
 .scrollLogo{
     width: 618px;
     margin-left: -73px;
     text-align: center;
-    margin-top: -320px;
+    margin-top: -200px;
     font-family: Futura PT custom Demi;
     font-size: 24px;
     line-height: 24px;
@@ -276,13 +381,13 @@
     align-items: flex-start;
     justify-content: space-between;
     
-    height: 230px;
+    height: 300px;
     margin-bottom: 20px;
 }
 
 .advantageImg{
-    width: 140px;
-    height: 140px;
+    width: 160px;
+    height: 160px;
 
     margin-top: 20px;
 }
@@ -496,7 +601,7 @@
         align-items: flex-start;
         justify-content: space-between;
         
-        height: 139px;
+        height: 160px;
         margin-bottom: 20px;
     }
     

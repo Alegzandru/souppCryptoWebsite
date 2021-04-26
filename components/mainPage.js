@@ -1,6 +1,6 @@
 import styles from "../styles/mainPage.module.css"
 import Layout from "../components/layout"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import {globalContent} from "./content"
 import Fade from 'react-reveal/Fade';
 
@@ -13,6 +13,12 @@ export function MainPage(props){
     const [scrolledBy, setScrolledBy] = useState(false)
     const [clickedMobile, setClickedMobile] = useState(false)
     const [content, setContent] = useState(0)
+
+    const [active1, setActive1] = useState(0)
+    const [active2, setActive2] = useState(0)
+    const [active3, setActive3] = useState(0)
+    const [active4, setActive4] = useState(0)
+
 
     const scrollPosition = () => {
         if(window.scrollY > 400){
@@ -29,6 +35,41 @@ export function MainPage(props){
         window.addEventListener("scroll", scrollPosition);
     }
 
+    function repeatOpening1(){
+        setTimeout(()=> setActive1(1), 20000)
+        setTimeout(()=> setActive1(0), 37000)
+        setTimeout(()=> repeatOpening1(), 48000)
+    }
+
+    function repeatOpening2(){
+        setTimeout(()=> setActive2(1), 30000)
+        setTimeout(()=> setActive2(0), 44000)
+        setTimeout(()=> repeatOpening2(), 48000)
+    }
+
+    function repeatOpening3(){
+        setTimeout(()=> setActive3(1), 6000)
+        setTimeout(()=> setActive3(0), 24000)
+        setTimeout(()=> repeatOpening3(), 48000)
+    }
+
+    function repeatOpening4(){
+        setTimeout(()=> setActive4(1), 2000)
+        setTimeout(()=> setActive4(0), 14000)
+        setTimeout(()=> repeatOpening4(), 48000)
+    }
+
+    useEffect(()=>{
+        
+        repeatOpening1()
+
+        repeatOpening2()
+
+        repeatOpening3()
+
+        repeatOpening4()
+    },[])
+
     return(
         // <Layout>
             <div className={styles.mainPageWrapper}>
@@ -42,7 +83,7 @@ export function MainPage(props){
                 >
                     <div 
                         className={styles.mainLogoWrapper}
-                        onMouseEnter = { () => {
+                        onClick = { () => {
                             setHoveredLogo(true)
                             setTimeout(() => setHoveredLogo2(true), 1200)
                         }}
@@ -60,6 +101,74 @@ export function MainPage(props){
                             // style={{display : scrolledBy ? "none" : "block"}}
                         />
 
+                        <img
+                            src="/clockFinal.svg"
+                            className={styles.clockImg}
+                        />
+
+                        <div className={`${active1 == 1 ? styles.locationWrapperActive : styles.locationWrapper} ${styles.location1}`}>
+                            <img 
+                                className={styles.locationImg}
+                                src="/europe1.svg"
+                            />
+
+                            London
+
+                            <div>
+                                (<span className={active1 ? styles.open : styles.closed}>
+                                    {active1 ? "Open" : "Closed"}
+                                </span>
+                                )
+                            </div>
+                        </div>
+
+                        <div className={`${active2 == 1 ? styles.locationWrapperActive : styles.locationWrapper} ${styles.location2}`}>
+                            <img 
+                                className={styles.locationImg}
+                                src="/america1.svg"
+                            />
+
+                            New-York 
+
+                            <div>
+                                (<span className={active2 ? styles.open : styles.closed}>
+                                    {active2 ? "Open" : "Closed"}
+                                </span>
+                                )
+                            </div>
+                        </div>
+
+                        <div className={`${active3 == 1 ? styles.locationWrapperActive : styles.locationWrapper} ${styles.location3}`}>
+                            <img 
+                                className={styles.locationImg}
+                                src="/asia1.svg"
+                            />
+
+                            Tokyo
+
+                            <div>
+                                (<span className={active3 ? styles.open : styles.closed}>
+                                    {active3 ? "Open" : "Closed"}
+                                </span>
+                                )
+                            </div>
+                        </div>
+
+                        <div className={`${active4 == 1 ? styles.locationWrapperActive : styles.locationWrapper} ${styles.location4}`}>
+                            <img 
+                                className={styles.locationImg}
+                                src="/australia1.svg"
+                            />
+                            Sydney
+
+                            <div>
+                                (<span className={active4 ? styles.open : styles.closed}>
+                                    {active4 ? "Open" : "Closed"}
+                                </span>
+                                )
+                            </div>
+                        </div>
+
                         <div
                             className={styles.scrollLogo}
                             style={{display : hoveredLogo ? "none" : "block"}}
@@ -69,122 +178,6 @@ export function MainPage(props){
                                 className={styles.scrollImg}
                             />
                         </div>
-
-                        {/* <div 
-                            className={styles.smallerLogosWrapper}
-                            style={{
-                                display : hoveredLogo ? "flex" : "none"
-                            }}
-                        >
-
-                            <div className={styles.smallerLogoRow}>
-                                <div 
-                                    className={styles.smallLogoBox}
-                                    onMouseEnter = { () => setContent(1)}
-                                >
-                                    <img 
-                                        src="/souppIcons/prediction.png" className={styles.smallLogo}
-                                    ></img>
-                                    <img 
-                                        src="/souppIcons/futures.png" className={styles.smallLogo}
-                                    ></img>
-                                    <img 
-                                        src="/souppIcons/signals.png" className={styles.smallLogo}
-                                        style={{
-                                            marginLeft: "40px",
-                                            marginTop: "-40px"
-                                        }}
-                                    ></img>
-
-                                    <div 
-                                        className={styles.appearingLine}
-                                        style={{
-                                            display : content == 1? "block" : "none"
-                                        }}
-                                    ></div>
-                                </div>
-
-                                <div 
-                                    className={styles.smallLogoBox}
-                                    onMouseEnter = { () => setContent(2)}
-                                >
-                                    <img 
-                                        src="/souppIcons/papers.png" className={styles.smallLogo}
-                                    ></img>
-                                    <img 
-                                        src="/souppIcons/commodities.png" className={styles.smallLogo}
-                                    ></img>
-                                    <img 
-                                        src="/souppIcons/fundamental.png" className={styles.smallLogo}
-                                        style={{
-                                            marginLeft: "40px",
-                                            marginTop: "-40px"
-                                        }}
-                                    ></img>
-
-                                    <div 
-                                        className={styles.appearingLine}
-                                        style={{
-                                            display : content == 2? "block" : "none"
-                                        }}
-                                    ></div>
-                                </div>
-                            </div>
-                            <div className={styles.smallerLogoRow}>
-                            <div 
-                                    className={styles.smallLogoBox}
-                                    onMouseEnter = { () => setContent(3)}
-                                >
-                                    <img 
-                                        src="/souppIcons/market.png" className={styles.smallLogo}
-                                    ></img>
-                                    <img 
-                                        src="/souppIcons/digest.png" className={styles.smallLogo}
-                                    ></img>
-                                    <img 
-                                        src="/souppIcons/news.png" className={styles.smallLogo}
-                                        style={{
-                                            marginLeft: "40px",
-                                            marginTop: "-40px"
-                                        }}
-                                    ></img>
-
-                                    <div 
-                                        className={styles.appearingLine}
-                                        style={{
-                                            display : content == 3? "block" : "none"
-                                        }}
-                                    ></div>
-                                </div>
-
-                                <div 
-                                    className={styles.smallLogoBox}
-                                    onMouseEnter = { () => setContent(4)}
-                                >
-                                    <img 
-                                        src="/souppIcons/library.png" className={styles.smallLogo}
-                                    ></img>
-                                    <img 
-                                        src="/souppIcons/videos.png" className={styles.smallLogo}
-                                    ></img>
-                                    <img 
-                                        src="/souppIcons/tools.png" className={styles.smallLogo}
-                                        style={{
-                                            marginLeft: "40px",
-                                            marginTop: "-40px"
-                                        }}
-                                    ></img>
-
-                                    <div 
-                                        className={styles.appearingLine}
-                                        style={{
-                                            display : content == 4? "block" : "none"
-                                        }}
-                                    ></div>
-                                </div>
-                            </div>
-
-                        </div>*/}
 
                     </div>
                     <div 
@@ -224,121 +217,6 @@ export function MainPage(props){
                                 />
                             </div>
 
-                            {/* <div 
-                                className={styles.smallerLogosWrapperMobile}
-                                style={{
-                                    display : clickedMobile ? "flex" : "none"
-                                }}
-                            >
-
-                                <div className={styles.smallerLogoRow}>
-                                    <div 
-                                        className={styles.smallLogoBox}
-                                        onMouseEnter = { () => setContent(1)}
-                                    >
-                                        <img 
-                                            src="/souppIcons/prediction.png" className={styles.smallLogo}
-                                        ></img>
-                                        <img 
-                                            src="/souppIcons/futures.png" className={styles.smallLogo}
-                                        ></img>
-                                        <img 
-                                            src="/souppIcons/signals.png" className={styles.smallLogo}
-                                            style={{
-                                                marginLeft: "40px",
-                                                marginTop: "-40px"
-                                            }}
-                                        ></img>
-
-                                        <div 
-                                            className={styles.appearingLine}
-                                            style={{
-                                                display : content == 1? "block" : "none"
-                                            }}
-                                        ></div>
-                                    </div>
-
-                                    <div 
-                                        className={styles.smallLogoBox}
-                                        onMouseEnter = { () => setContent(2)}
-                                    >
-                                        <img 
-                                            src="/souppIcons/papers.png" className={styles.smallLogo}
-                                        ></img>
-                                        <img 
-                                            src="/souppIcons/commodities.png" className={styles.smallLogo}
-                                        ></img>
-                                        <img 
-                                            src="/souppIcons/fundamental.png" className={styles.smallLogo}
-                                            style={{
-                                                marginLeft: "40px",
-                                                marginTop: "-40px"
-                                            }}
-                                        ></img>
-
-                                        <div 
-                                            className={styles.appearingLine}
-                                            style={{
-                                                display : content == 2? "block" : "none"
-                                            }}
-                                        ></div>
-                                    </div>
-                                </div>
-                                <div className={styles.smallerLogoRow}>
-                                <div 
-                                        className={styles.smallLogoBox}
-                                        onMouseEnter = { () => setContent(3)}
-                                    >
-                                        <img 
-                                            src="/souppIcons/market.png" className={styles.smallLogo}
-                                        ></img>
-                                        <img 
-                                            src="/souppIcons/digest.png" className={styles.smallLogo}
-                                        ></img>
-                                        <img 
-                                            src="/souppIcons/news.png" className={styles.smallLogo}
-                                            style={{
-                                                marginLeft: "40px",
-                                                marginTop: "-40px"
-                                            }}
-                                        ></img>
-
-                                        <div 
-                                            className={styles.appearingLine}
-                                            style={{
-                                                display : content == 3? "block" : "none"
-                                            }}
-                                        ></div>
-                                    </div>
-
-                                    <div 
-                                        className={styles.smallLogoBox}
-                                        onMouseEnter = { () => setContent(4)}
-                                    >
-                                        <img 
-                                            src="/souppIcons/library.png" className={styles.smallLogo}
-                                        ></img>
-                                        <img 
-                                            src="/souppIcons/videos.png" className={styles.smallLogo}
-                                        ></img>
-                                        <img 
-                                            src="/souppIcons/tools.png" className={styles.smallLogo}
-                                            style={{
-                                                marginLeft: "40px",
-                                                marginTop: "-40px"
-                                            }}
-                                        ></img>
-
-                                        <div 
-                                            className={styles.appearingLine}
-                                            style={{
-                                                display : content == 4? "block" : "none"
-                                            }}
-                                        ></div>
-                                    </div>
-                                </div>
-
-                            </div>*/}
                         </div>
                         <h2 
                             // className={clickedMobile? styles.h2Clicked : styles.h2}
@@ -368,32 +246,6 @@ export function MainPage(props){
                                 display: "none"
                             }}
                         >
-                            {/* <div 
-                                className={styles.smallIconsWrapper}
-                                style={{
-                                    display : clickedMobile ? "none" : hoveredLogo ? "none" : "flex"
-                                }}
-                            >
-                                <img src="/souppIcons/commodities.png" className={styles.smallIcon}></img>
-                                <img src="/souppIcons/digest.png" className={styles.smallIcon}></img>
-                                <img src="/souppIcons/discuss.png" className={styles.smallIcon}></img>
-                                <img src="/souppIcons/fundamental.png" className={styles.smallIcon}></img>
-                                <img src="/souppIcons/futures.png" className={styles.smallIcon}></img>
-                                <img src="/souppIcons/invest.png" className={styles.smallIcon}></img>
-                                <img src="/souppIcons/library.png" className={styles.smallIcon}></img>
-                                <img src="/souppIcons/liveTrade.png" className={styles.smallIcon}></img>
-                                <img src="/souppIcons/market.png" className={styles.smallIcon}></img>
-                                <img src="/souppIcons/news.png" className={styles.smallIcon}></img>
-                                <img src="/souppIcons/papers.png" className={styles.smallIcon}></img>
-                                <img src="/souppIcons/prediction.png" className={styles.smallIcon}></img>
-                                <img src="/souppIcons/signals.png" className={styles.smallIcon}></img>
-                                <img src="/souppIcons/videos.png" className={styles.smallIcon}></img>
-                                <img src="/souppIcons/commodities.png" className={styles.smallIcon}></img>
-                                <img src="/souppIcons/digest.png" className={styles.smallIcon}></img>
-                                <img src="/souppIcons/discuss.png" className={styles.smallIcon}></img>
-                                <img src="/souppIcons/fundamental.png" className={styles.smallIcon}></img>
-                                <img src="/souppIcons/futures.png" className={styles.smallIcon}></img>
-                            </div> */}
                         </div>
                     </div>
 

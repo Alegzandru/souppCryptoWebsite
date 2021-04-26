@@ -1,5 +1,5 @@
 import {MainPage} from "../components/mainPage"
-import {AboutUsStats} from "../components/aboutUsStats"
+import {AboutUsStats} from "../components/aboutUsStats2"
 import {AboutUsTrading} from "../components/aboutUsTrading"
 import {OurServices} from "../components/ourServices"
 import {Testimonials} from "../components/testimonials"
@@ -7,7 +7,7 @@ import {Contacts} from "../components/contacts"
 import Layout from "../components/layout"
 import {useState} from "react"
 
-import LanguageContext from "../components/context";
+import {LanguageContext} from "../components/context";
 
 
 function HomePage() {

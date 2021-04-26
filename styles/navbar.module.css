@@ -53,6 +53,8 @@
     line-height: 48px;
     color: #2D3E50;
     font-family: Futura PT custom Demi;
+
+    transition: 300ms;
 }
 
 .navItem:hover{
@@ -62,6 +64,8 @@
     border-width: 0px 0px 4px 0px;
     border-color: #2D3E50;
     height: 44px;
+
+    transition: 300ms;
 }
 
 .navItem.active{

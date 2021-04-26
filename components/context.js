@@ -1,12 +1,15 @@
 import React from "react";
 
-const LanguageContext = React.createContext({
+export const LanguageContext = React.createContext({
   language: 0,
   setLanguage: () => {}
 });
 
-export default LanguageContext;
 
+export const WidthContext = React.createContext({
+  width: 0,
+  setWidth: () => {}
+})
 
 
 // import React, {createContext, useState} from "react"

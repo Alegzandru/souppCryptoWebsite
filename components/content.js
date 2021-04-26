@@ -2,8 +2,8 @@ export const globalContent = [
     {
         mainPageContent: [
             {
-                heading: "Мы SOUPP - сообщество трэйдеров",
-                subheading : "SOUPP - это колектив трэйдеров с многолетним опытом. Мы помогаем начинающим понять как работает биржа и предлагаем качественные торговые сигналы."
+                heading: "Что такое SOUPP?",
+                subheading : "SOUPP CRYPTO CAPITAL, именуемое далее как SPCC - это сообщество людей, мотивированных и зацикленных на свободе: свободе дела и слова, свободе действия и передвижения в рамках финансовой свободы. Это люди, чей упор сделан на финансовой грамотности и независимости от предрассудков, обстоятельств, посредством работы на перспективном, высоковолатильном рынке."
             },
             {
                 heading: "Чаты для предсказывания цен",
@@ -108,23 +108,23 @@ export const globalContent = [
             advantages : [
                 {
                     heading : "Ежедневный анализ рынка",
-                    subheading : "Ежедневно получайте подробный обзор рынка, а также наши мысли о потенциальных движениях цен.",
+                    subheading : "Пребывая в нашем сообществе, Вам не придется анализировать огромный объём информации в одиночку. Опытные аналитики и трейдеры нашего сообщества будут держать Вас в курсе мировых трендов 24/7 в наших телеграм-каналах.",
                 },
                 {
                     heading : "Аналитическое образование",
-                    subheading: "Большой пакет материалов, в котором рассказывается не только об основах технического анализа, но и об эксклюзивных стратегиях, которые помогут вам реально зарабатывать на торговле."
+                    subheading: "Каждый трейдер обладает своим неповторимым стилем торговли, который складывается из разных факторов, таких как характер, отношение к рискам, и к жизни. Поэтому в обществе трейдеров все говорят, что учиться торговать - вырабатывать личный стиль."
                 },
                 {
                     heading: "Сделки в реальном времени",
-                    subheading: "Получайте мгновенную информацию о сделках, открытых нашими аналитиками, и следите за ними в полностью автоматизированном режиме."
+                    subheading: "Для тех людей, кто не хочет тратить время и имеет лояльное отношение к рискам, может повторять сделки наших ведущих трейдеров. Вся статистика на сигналы имеется в открытом доступе в наших каналах на временных интервалах торговли D1 и H4."
                 },
                 {
                     heading : "Управление рисками",
-                    subheading : "Узнайте, как создать идеальную настройку для вашей торговли: где разместить стоп-лосс, какой процент от депозита инвестировать и т. Д.",
+                    subheading : "В нашем комьюнити Вы научитесь рассчитывать риски, правильно относится к ним, чтобы извлекать максимальную выгоду. Изучите «безрисковые» и «казиношные» стратегии, и определите подходяший риск для вашего стиля торговли.",
                 },
                 {
                     heading: "Профессиональные инструменты",
-                    subheading: "Получите массу ботов и полезных сервисов, которые предоставляют чрезвычайно важные данные для совершения прибыльных сделок."
+                    subheading: "У нас Вы научитесь использовать и применять инструменты для Технического анализа поведения цены, на основе которых строятся различные торговые стратегии, в том числе и наши. Поймете, что такое индикаторы, а также как самому писать индикаторы под личные нужды."
                 },
                 {
                     heading: "Материалы по психологии",
@@ -136,8 +136,8 @@ export const globalContent = [
     {
         mainPageContent: [
             {
-                heading: "SOUPP - become a member of our traders community",
-                subheading : "We are SOUPP - a community of experienced traders who want to guide and elevate a new generation of traders. We will help you understand how the platform works and will provide only high quality signals."
+                heading: "What is SOUPP crypto?",
+                subheading : "SOUPP CRYPTO CAPITAL, hereinafter referred to as SPCC , is a community of people who are motivated and fixated on freedom: freedom of business and speech, freedom of action and movement within the framework of financial freedom. These are people whose focus is on financial literacy and independence from prejudices, circumstances, through working in a promising, highly volatile market."
             },
             {
                 heading: "Price prediction chats",
@@ -242,23 +242,23 @@ export const globalContent = [
             advantages : [
                 {
                     heading : "Daily Market Analysis",
-                    subheading : "Receive a detailed market review as well as our thoughts about potential price movements on a daily basis.",
+                    subheading : "Being in our community, you will not have to analyze a huge amount of information alone. Experienced analysts and traders of our community will keep you updated on world trends 24/7 in our telegram channels.",
                 },
                 {
                     heading : "Analysis Education",
-                    subheading : "A large pack of materials which tells you not only about technical analysis basics, but about exclusive strategies which will help you to actually earn on trading.",
+                    subheading : "Each trader has his own unique trading style, which is made up of various factors such as character, attitude to risk, and life. Therefore, in the trading community, everyone says that learning to trade is learning to develop a personal style.",
                 },
                 {
                     heading : "Regular Live Trades",
-                    subheading: "Receive an instant information about trades our analysts open and follow them on a fully automated basis."
+                    subheading: "For those people who do not want to waste time and have a loyal attitude to risks, they can repeat the trades of our leading traders. All signal statistics are publicly available in our channels on D1 and H4 trading time frames."
                 },
                 {
                     heading: "Risk management",
-                    subheading: "Learn how to build a perfect setup for your trade: where to place stop loss, what percentage from deposit to invest etc."
+                    subheading: "In our community, you will learn how to calculate risks, treat them correctly in order to get the maximum benefit. Study the “risk-free” and “casino” strategies, and determine the appropriate risk for your trading style."
                 },
                 {
                     heading: "Professional Tools",
-                    subheading: "Get tons of bots and useful services which provide an extremely important data for making profitable trades."
+                    subheading: "Here you will learn how to use and apply the tools for the Technical analysis of price behavior, on the basis of which various trading strategies are built, including ours. You will understand what indicators are, as well as how to write indicators for your personal needs."
                 },
                 {
                     heading: "Psychology Materials",

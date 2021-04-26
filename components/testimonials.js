@@ -22,7 +22,7 @@ export function Testimonials(props){
                     <div className={styles.testimonialsBox}>
 
                         <div className={styles.testimonialContainer}>
-                            <div className={styles.testimonialPhoto}></div>
+                            {/* <div className={styles.testimonialPhoto}></div>
                             <div className={styles.testimonialContentWrapper}>
                                 <div className={styles.testimonialPhotoMobile}></div>
                                 <div className={styles.testimonialName}>
@@ -46,63 +46,28 @@ export function Testimonials(props){
                                     <img src="/greenStar.svg" className={styles.starImg}></img>
                                     <img src="/greenStar.svg" className={styles.starImg}></img>
                                 </div>
-                            </div>
+                            </div> */}
+                            <img 
+                                src={`/review${slide*3 + 1}.png`}
+                                className={styles.reviewImg}
+                            >
+                            </img>
                         </div>
 
                         <div className={styles.testimonialContainer}>
-                            <div className={styles.testimonialPhoto}></div>
-                            <div className={styles.testimonialContentWrapper}>
-                                <div className={styles.testimonialPhotoMobile}></div>
-                                <div className={styles.testimonialName}>
-                                    {
-                                        props.lang == 0 ? 
-                                        testimonialContentRu[slide+1].name :
-                                        testimonialContentEn[slide+1].name
-                                    }
-                                </div>
-                                <div className={styles.testimonialContent}>
-                                    {
-                                        props.lang == 0 ? 
-                                        testimonialContentRu[slide+1].text :
-                                        testimonialContentEn[slide+1].text
-                                    }
-                                </div>
-                                <div className={styles.starsWrapper}>
-                                    <img src="/greenStar.svg" className={styles.starImg}></img>
-                                    <img src="/greenStar.svg" className={styles.starImg}></img>
-                                    <img src="/greenStar.svg" className={styles.starImg}></img>
-                                    <img src="/greenStar.svg" className={styles.starImg}></img>
-                                    <img src="/greenStar.svg" className={styles.starImg}></img>
-                                </div>
-                            </div>
+                            <img 
+                                src={`/review${slide*3 + 2}.png`}
+                                className={styles.reviewImg}
+                            >
+                            </img>
                         </div>
 
                         <div className={styles.testimonialContainer}>
-                            <div className={styles.testimonialPhoto}></div>
-                            <div className={styles.testimonialContentWrapper}>
-                                <div className={styles.testimonialPhotoMobile}></div>
-                                <div className={styles.testimonialName}>
-                                    {
-                                        props.lang == 0 ? 
-                                        testimonialContentRu[slide+2].name :
-                                        testimonialContentEn[slide+2].name
-                                    }
-                                </div>
-                                <div className={styles.testimonialContent}>
-                                    {
-                                        props.lang == 0 ? 
-                                        testimonialContentRu[slide+2].text :
-                                        testimonialContentEn[slide+2].text
-                                    }
-                                </div>
-                                <div className={styles.starsWrapper}>
-                                    <img src="/greenStar.svg" className={styles.starImg}></img>
-                                    <img src="/greenStar.svg" className={styles.starImg}></img>
-                                    <img src="/greenStar.svg" className={styles.starImg}></img>
-                                    <img src="/greenStar.svg" className={styles.starImg}></img>
-                                    <img src="/greenStar.svg" className={styles.starImg}></img>
-                                </div>
-                            </div>
+                            <img 
+                                src={`/review${slide*3 + 3}.png`}
+                                className={styles.reviewImg}
+                            >
+                            </img>
                         </div>
 
                     </div>
@@ -113,7 +78,7 @@ export function Testimonials(props){
                             onMouseEnter={() => setHovered1(true)}
                             onMouseLeave={() => setHovered1(false)}
                             style={{backgroundColor: hovered1? "#2D3E50" : "#AFDF9D"}}
-                            onClick={()=>setSlide(slide == 0 ? 3 : 0)}
+                            onClick={()=>setSlide(slide == 0 ? 1 : 0)}
                         >
                             <img src={hovered1 ? "/greenArrow.svg" :"/leftArrow3.svg"} className={styles.leftArrow}></img>
                         </div>
@@ -123,7 +88,7 @@ export function Testimonials(props){
                             onMouseEnter={() => setHovered2(true)}
                             onMouseLeave={() => setHovered2(false)}
                             style={{backgroundColor: hovered2? "#2D3E50" : "#AFDF9D"}}
-                            onClick={()=>setSlide(slide == 0 ? 3 : 0)}
+                            onClick={()=>setSlide(slide == 0 ? 1 : 0)}
                         >
                             <img src={hovered2 ? "/greenArrow.svg" :"/leftArrow3.svg"} className={styles.rightArrow}></img>
                         </div>

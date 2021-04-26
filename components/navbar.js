@@ -1,9 +1,35 @@
 import styles from "../styles/navbar.module.css"
 import React, { useState, useEffect, useContext } from 'react';
 import Link from 'next/link'
-import LanguageContext from "./context";
+import {LanguageContext, WidthContext} from "./context";
 import {globalContent} from "./content"
 
+
+function useWindowSize() {
+
+    const [windowSize, setWindowSize] = useState({
+      width: undefined,
+      height: undefined,
+    });
+  
+    useEffect(() => {
+      if (typeof window !== 'undefined') {
+        function handleResize() {
+          setWindowSize({
+            width: window.innerWidth,
+            height: window.innerHeight,
+          });
+        }
+      
+        window.addEventListener("resize", handleResize);
+       
+        handleResize();
+      
+        return () => window.removeEventListener("resize", handleResize);
+      }
+    }, []); // Empty array ensures that effect is only run on mount
+    return windowSize;
+}
 
 export function Navbar(props){
 
@@ -17,6 +43,8 @@ export function Navbar(props){
     const[translateHover, setTranslateHover] = useState(false)
     const[hoveredOnce, setHoveredOnce] = useState(false)
 
+    const {width, setWidth} = useContext(WidthContext)
+
     const scrollPosition = () => {
         setActiveLink(Math.round(window.scrollY / 900))
         // console.log(window.scrollY)
@@ -26,7 +54,14 @@ export function Navbar(props){
         window.addEventListener("scroll", scrollPosition);
     }
 
+    const size = useWindowSize();
     const { language, setLanguage } = useContext(LanguageContext);
+
+    useEffect(
+        () => {
+            setWidth(size.width)
+        }
+    )
       
 
     return(

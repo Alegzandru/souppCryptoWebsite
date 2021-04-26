@@ -94,7 +94,7 @@ export function Contacts(props){
                             </a>
                             <div className={styles.contactBox}>
                                 <img src="/emailIcon.svg" className={styles.icon}></img>
-                                <div className={styles.contactLink}>soupp.capital@yandex.ru</div>
+                                <div className={styles.contactLink}>souppcapital@gmail.com</div>
                             </div>
                             <div className={styles.socialBox}>
                                 <a href="https://www.instagram.com/soupp.crypto/" target="blank">

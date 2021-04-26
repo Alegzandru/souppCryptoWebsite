@@ -1,7 +1,8 @@
 .wrapper{
-    height: 900px;
+    height: auto;
     /* background-color: #253D57; */
     background-color: #2D3E50;
+    padding-top: 180px;
 }
 
 .container{
@@ -13,8 +14,6 @@
 
     margin-right: auto;
     margin-left: auto;
-
-    padding-top: 100px;
 }
 
 .textDivWrapper{
@@ -27,6 +26,9 @@
     font-family: Futura PT custom Demi; 
     color: white;
     margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .subheading{
@@ -75,6 +77,20 @@
 }
 
 .imgWrapper{
+    width: 300px;
+    height: 615px;
+
+    transform: perspective(1000px) rotateY(-15deg);
+}
+
+.imgWrapper2{
+    width: 300px;
+    height: 615px;
+
+    transform: perspective(1000px) rotateY(0deg) scale(1.05);
+}
+
+.imgWrapper3{
     width: 300px;
     height: 615px;
 
@@ -170,8 +186,6 @@
     
         margin-right: auto;
         margin-left: auto;
-    
-        padding-top: 110px;
     }
     
     .textDivWrapper{
@@ -181,7 +195,7 @@
     
     .h1{
         font-size: 44px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         text-align: center;
         font-family: Futura PT custom Demi; 
     }
@@ -205,7 +219,19 @@
     .img{
         height: 615px;
         width: 300px;
-        margin-top: 80px;
+        margin-top: 0px;
+    }
+
+    .imgWrapper{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    .imgWrapper2{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    .imgWrapper3{
+        transform: perspective(1000px) rotateY(0deg);
     }
 
     .video{
@@ -216,8 +242,37 @@
     
         /* margin-top: 0;
         margin-left: 5px; */
-        margin-top: 87px;
+        margin-top: 7px;
         margin-left: -300px;
+    }
+
+    .buttonsWrapper{
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .buttonInactive{
+        width: 14px;
+        height: 14px;
+        background-color: #C5C5C5;
+        border-radius: 50%;
+        margin-right: 16px;
+        box-shadow: 0px 0px 10px rgb(197, 197, 197, 0.1);
+    }
+
+    .buttonActive{
+        width: 14px;
+        height: 14px;
+        background-color: #AFDF9D;
+        border-radius: 50%;
+        margin-right: 16px;
+        box-shadow: 0px 0px 10px rgb(175, 223, 157,0.1);
     }
 
 }
@@ -225,12 +280,11 @@
 @media screen and (max-width: 524px){
     .wrapper{
         height: auto;
+        padding-top: 60px;
     }
     
     .container{
         max-width: 344px;
-    
-        padding-top: 110px;
     }
     
     .textDivWrapper{
@@ -240,6 +294,7 @@
     
     .h1{
         font-size: 30px;
+        margin-bottom: 0px;
     }
     
     .statsWrapper{
@@ -269,11 +324,25 @@
         justify-content: center;
         align-items: center;
     }
+
+    .imgWrapper2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgWrapper3{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
     
     .img{
         height: 460px;
         width: 224px;
-        margin-top: 60px;
+        margin-top: -100px;
     }
 
     .video{
@@ -284,7 +353,7 @@
     
         /* margin-top: 0;
         margin-left: 5px; */
-        margin-top: 20px;
+        margin-top: -120px;
         margin-left: 0px;
     }
     
@@ -295,5 +364,9 @@
         margin-top: 30px;
         font-size: 22px;
         line-height: 50px;
+    }
+
+    .buttonsWrapper{
+        margin-top: -100px;
     }
 }
