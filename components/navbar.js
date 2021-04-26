@@ -134,8 +134,12 @@ export function Navbar(props){
                     className={styles.mobileIcon}
                     onClick = {() => setNavbarOpen(!navbarOpen)}
                 ></img> */}
-                
-                <Hamburger toggled={navbarOpen} toggle={setNavbarOpen} size={36} color="#2D3E50" duration={0.5}/>
+
+                <div className={styles.mobileIcon}>
+                    <Hamburger 
+                        toggled={navbarOpen} toggle={setNavbarOpen} size={36} color="#2D3E50" duration={0.5}
+                    />
+                </div>
 
             </div>
             <div 
