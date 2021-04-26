@@ -3,7 +3,13 @@ export const globalContent = [
         mainPageContent: [
             {
                 heading: "Что такое SOUPP?",
-                subheading : "SOUPP CRYPTO CAPITAL, именуемое далее как SPCC - это сообщество людей, мотивированных и зацикленных на свободе: свободе дела и слова, свободе действия и передвижения в рамках финансовой свободы. Это люди, чей упор сделан на финансовой грамотности и независимости от предрассудков, обстоятельств, посредством работы на перспективном, высоковолатильном рынке."
+                subheading : "SOUPP CRYPTO CAPITAL, именуемое далее как SPCC - это сообщество людей, мотивированных и зацикленных на свободе: свободе дела и слова, свободе действия и передвижения в рамках финансовой свободы. Это люди, чей упор сделан на финансовой грамотности и независимости от предрассудков, обстоятельств, посредством работы на перспективном, высоковолатильном рынке.",
+                tokyo : "Токио",
+                london : "Лондон",
+                sydney : "Сидней",
+                newYork : "Нью йорк",
+                open : "Открыто",
+                closed : "Закрыто"
             },
             {
                 heading: "Чаты для предсказывания цен",
@@ -50,7 +56,8 @@ export const globalContent = [
             stat3:{
                 number : "80%",
                 text: "Точность"
-            }
+            },
+            heading2 : "Наши чаты"
         },
         aboutUsTradingContent:
         {
@@ -131,13 +138,27 @@ export const globalContent = [
                     subheading: "Одна из самых важных вещей для хорошего трейдера - это контроль ума. Узнайте, как контролировать свои эмоции в решающие моменты."
                 }
             ]
+        },
+        footer : {
+            copyright: "Copyright © SOUPP Crypto 2020 - Все права защищены",
+            disclaimer : "Дисклеймер"
+        },
+        disclaimer : {
+            heading : "!Не является индивидуальной инвестиционной рекомендацией",
+            text : "Данная информация не является индивидуальной инвестиционной рекомендацией, и финансовые инструменты либо операции, упомянутые в ней, могут не соответствовать Вашему инвестиционному профилю и инвестиционным целям (ожиданиям). Определение соответствия финансового инструмента либо операции Вашим интересам, инвестиционным целям, инвестиционному горизонту и уровню допустимого риска является Вашей задачей. SPCC не несет ответственности за возможные убытки в случае совершения операций либо инвестирования в финансовые инструменты, упомянутые в данной информации, и не рекомендует использовать указанную информацию в качестве единственного источника информации при принятии инвестиционного решения."
         }
     },
     {
         mainPageContent: [
             {
                 heading: "What is SOUPP crypto?",
-                subheading : "SOUPP CRYPTO CAPITAL, hereinafter referred to as SPCC , is a community of people who are motivated and fixated on freedom: freedom of business and speech, freedom of action and movement within the framework of financial freedom. These are people whose focus is on financial literacy and independence from prejudices, circumstances, through working in a promising, highly volatile market."
+                subheading : "SOUPP CRYPTO CAPITAL, hereinafter referred to as SPCC , is a community of people who are motivated and fixated on freedom: freedom of business and speech, freedom of action and movement within the framework of financial freedom. These are people whose focus is on financial literacy and independence from prejudices, circumstances, through working in a promising, highly volatile market.",
+                tokyo : "Tokyo",
+                london : "London",
+                sydney : "Sydney",
+                newYork : "New York",
+                open : "Open",
+                closed : "Closed"
             },
             {
                 heading: "Price prediction chats",
@@ -184,7 +205,8 @@ export const globalContent = [
             stat3:{
                 number : "80%",
                 text: "Accuracy"
-            }
+            },
+            heading2 : "Our chats"
         },
         aboutUsTradingContent:
         {
@@ -265,6 +287,14 @@ export const globalContent = [
                     subheading: "One of the most important things for a good trader is mind-control. Learn how to control your emotions at crucial moments."
                 }
             ]
+        },
+        footer : {
+            copyright: "Copyright © SOUPP Crypto 2020 - All rights reserved",
+            disclaimer : "Disclaimer"
+        },
+        disclaimer : {
+            heading : "! Not an individual investment recommendation",
+            text : "The Content is for informational purposes only, you should not construe any such information or other material as legal, tax, investment, financial, or other advice. Nothing contained on our Site constitutes a solicitation, recommendation, endorsement, or offer by SPCC or any third party service provider to buy or sell any securities or other financial instruments in this or in in any other jurisdiction in which such solicitation or offer would be unlawful under the securities laws of such jurisdiction. All Content on this site is information of a general nature and does not address the circumstances of any particular individual or entity. Nothing in the Site constitutes professional and/or financial advice, nor does any information on the Site constitute a comprehensive or complete statement of the matters discussed or the law relating thereto. SPCC is not a fiduciary by virtue of any person’s use of or access to the Site or Content. You alone assume the sole responsibility of evaluating the merits and risks associated with the use of any information or other Content on the Site before making any decisions based on such information or other Content. In exchange for using the Site, you agree not to hold SPCC, its affiliates or any third party service provider liable for any possible claim for damages arising from any decision you make based on information or other Content made available to you through the Site."
         }
     }
 ]

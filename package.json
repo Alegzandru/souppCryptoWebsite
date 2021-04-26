@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "emailjs-com": "^2.6.4",
+    "hamburger-react": "^2.4.0",
     "next": "^10.0.7",
     "react": "^17.0.1",
     "react-countup": "^4.3.3",

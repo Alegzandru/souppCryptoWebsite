@@ -16,7 +16,7 @@ export function AboutUsStats(props){
     return(
         <div className={styles.wrapper}>
             <h2 className={styles.h1}>
-                Our chats
+                {globalContent[props.lang].aboutUsStatsContent.heading2}
             </h2>
             <div name="stats" className={styles.container}>
 

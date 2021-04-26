@@ -4,19 +4,17 @@ import {AboutUsTrading} from "../components/aboutUsTrading"
 import {OurServices} from "../components/ourServices"
 import {Testimonials} from "../components/testimonials"
 import {Contacts} from "../components/contacts"
+import {Footer} from "../components/footer"
 import Layout from "../components/layout"
-import {useState} from "react"
-
+import {useContext, useState} from "react"
 import {LanguageContext} from "../components/context";
 
 
 function HomePage() {
 
-    const [language, setLanguage] = useState(0);
-    const value = { language, setLanguage };
+    const {language, setLanguage} = useContext(LanguageContext)
 
     return(
-        <LanguageContext.Provider value={value}>
             <Layout>
                 <MainPage
                     lang={language}
@@ -37,7 +35,6 @@ function HomePage() {
                     lang={language}
                 ></Contacts>
             </Layout>
-        </LanguageContext.Provider>
     )
 }
   

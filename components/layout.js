@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component, useContext } from 'react';
 import Head from 'next/head';
 import {Navbar} from './navbar.js'
-// import {Footer} from "./footer/footer.js"
-// import "../styles/layout.css"
+import {Footer} from "./footer.js"
 
 export default class Layout extends Component {
-  render() {
+    
+    render() {
+
     const { children, title, style, className } = this.props;
 
     return (
@@ -22,9 +23,9 @@ export default class Layout extends Component {
 
         <main className="mainContent">{children}</main>
         
-        {/* <footer>
+        <footer>
             <Footer></Footer>
-        </footer> */}
+        </footer>
     </div>
     );
   }

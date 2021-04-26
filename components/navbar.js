@@ -3,6 +3,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import Link from 'next/link'
 import {LanguageContext, WidthContext} from "./context";
 import {globalContent} from "./content"
+import { Squash as Hamburger } from 'hamburger-react'
 
 
 function useWindowSize() {
@@ -128,11 +129,14 @@ export function Navbar(props){
                     </a>
                 </div>
 
-                <img 
+                {/* <img 
                     src={navbarOpen? "closeIcon.svg" : "hamburgerIcon.svg"}
                     className={styles.mobileIcon}
                     onClick = {() => setNavbarOpen(!navbarOpen)}
-                ></img>
+                ></img> */}
+                
+                <Hamburger toggled={navbarOpen} toggle={setNavbarOpen} size={36} color="#2D3E50" duration={0.5}/>
+
             </div>
             <div 
                 className={styles.mobileMenu}   

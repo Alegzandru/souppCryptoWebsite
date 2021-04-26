@@ -104,6 +104,9 @@ export function MainPage(props){
                         <img
                             src="/clockFinal.svg"
                             className={styles.clockImg}
+                            style={{
+                                display : hoveredLogo? "none" : ""
+                            }}
                         />
 
                         <div className={`${active1 == 1 ? styles.locationWrapperActive : styles.locationWrapper} ${styles.location1}`}>
@@ -112,11 +115,15 @@ export function MainPage(props){
                                 src="/europe1.svg"
                             />
 
-                            London
+                            {globalContent[props.lang].mainPageContent[0].london}
 
                             <div>
                                 (<span className={active1 ? styles.open : styles.closed}>
-                                    {active1 ? "Open" : "Closed"}
+                                    {active1 ? 
+                                        globalContent[props.lang].mainPageContent[0].open
+                                        : 
+                                        globalContent[props.lang].mainPageContent[0].closed
+                                    }
                                 </span>
                                 )
                             </div>
@@ -128,11 +135,15 @@ export function MainPage(props){
                                 src="/america1.svg"
                             />
 
-                            New-York 
+                            {globalContent[props.lang].mainPageContent[0].newYork}
 
                             <div>
                                 (<span className={active2 ? styles.open : styles.closed}>
-                                    {active2 ? "Open" : "Closed"}
+                                    {active2 ? 
+                                        globalContent[props.lang].mainPageContent[0].open
+                                        : 
+                                        globalContent[props.lang].mainPageContent[0].open
+                                    }
                                 </span>
                                 )
                             </div>
@@ -144,11 +155,15 @@ export function MainPage(props){
                                 src="/asia1.svg"
                             />
 
-                            Tokyo
+                            {globalContent[props.lang].mainPageContent[0].tokyo}
 
                             <div>
                                 (<span className={active3 ? styles.open : styles.closed}>
-                                    {active3 ? "Open" : "Closed"}
+                                    {active3 ? 
+                                        globalContent[props.lang].mainPageContent[0].open
+                                        : 
+                                        globalContent[props.lang].mainPageContent[0].open
+                                    }
                                 </span>
                                 )
                             </div>
@@ -159,11 +174,16 @@ export function MainPage(props){
                                 className={styles.locationImg}
                                 src="/australia1.svg"
                             />
-                            Sydney
+
+                            {globalContent[props.lang].mainPageContent[0].sydney}
 
                             <div>
                                 (<span className={active4 ? styles.open : styles.closed}>
-                                    {active4 ? "Open" : "Closed"}
+                                    {active4 ? 
+                                        globalContent[props.lang].mainPageContent[0].open
+                                        : 
+                                        globalContent[props.lang].mainPageContent[0].open
+                                    }
                                 </span>
                                 )
                             </div>

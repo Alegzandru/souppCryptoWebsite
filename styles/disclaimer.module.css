@@ -1,0 +1,39 @@
+.wrapper{
+    width: 100%;
+    height: calc(100vh - 100px - 48px);
+    background-color: #2D3E50;
+
+    padding-top: 100px;
+}
+
+.container{
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 24px;
+    color: #E5E5E5;
+    font-family: Futura PT custom Mediu;
+}
+
+.h1{
+    font-size: 36px;
+    color: #E5E5E5;
+    font-family: Futura PT custom Demi;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 992px){
+    .container{
+        width: calc(100% - 32px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 528px){
+    .wrapper{
+        padding-top: 60px;
+        height: auto;
+    }
+}

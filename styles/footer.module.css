@@ -1,0 +1,63 @@
+.wrapper{
+    width: 100%;
+    background-color: #2D3E50;
+    padding-top: 30px;
+}
+
+.container{
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.upperFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 18px;
+    color: #E5E5E5;
+    font-family: Futura PT custom Demi;
+}
+
+.logoContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo{
+    width: 36px;
+    height: 36px;
+    transform: rotate(60deg);
+    margin-right: 10px;
+}
+
+.line{
+    width: 100%;
+    background-color: #E5E5E5;
+    height: 2px;
+}
+
+.lowerFooter{
+    font-size: 16px;
+    color: #E5E5E5;
+    font-family: Futura PT custom Book;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 992px){
+
+    .container{
+        width: calc(100% - 32px);
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
