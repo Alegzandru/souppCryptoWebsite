@@ -12,6 +12,21 @@
     padding-top: 120px;
 }
 
+.souppLink{
+    display: inline;
+    text-decoration: underline;
+}
+
+.popupWrapper{
+    position: fixed;
+    height: 700px;
+    width: 940px;
+    left: calc((100vw - 940px)/2);
+    top: calc((100vh - 700px)/2);
+    background-color: white;
+    z-index: 2;
+}
+
 .mainLogo{
     width: 618px;
     height: 618px;

@@ -13,6 +13,7 @@ export function MainPage(props){
     const [scrolledBy, setScrolledBy] = useState(false)
     const [clickedMobile, setClickedMobile] = useState(false)
     const [content, setContent] = useState(0)
+    const [popupOpen, setPopupOpen] = useState(0)
 
     const [active1, setActive1] = useState(0)
     const [active2, setActive2] = useState(0)
@@ -72,6 +73,13 @@ export function MainPage(props){
 
     return(
         // <Layout>
+        <div>
+            {/* <div 
+                className={styles.popupWrapper}
+                style={{
+                    display : popupOpen ? "block" : "none"
+                }}
+            ></div> */}
             <div className={styles.mainPageWrapper}>
                 <div 
                     name="mainPage" 
@@ -207,7 +215,19 @@ export function MainPage(props){
                         }}
                     >
                         <h1 className={styles.h1}>
-                            {globalContent[props.lang].mainPageContent[content].heading}
+                            {globalContent[props.lang].mainPageContent[content].heading} 
+                            <a 
+                                className={styles.souppLink}
+                                href="https://telegra.ph/SOUPP-crypto-Capital-04-27"
+                                target="blank"
+                                style={{
+                                    textDecoration: "underline",
+                                    color: "#E5E5E5"
+                                }}
+                            >
+                                SOUPP
+                            </a>
+                            ?
                             {/* {mainPageContent[content].heading} */}
                         </h1>
                         <div 
@@ -253,6 +273,16 @@ export function MainPage(props){
                                 globalContent[props.lang].mainPageContent[content].chat1
                                 }
                             </div>
+                            {/* <div
+                                style={{
+                                    textDecoration : "underline",
+                                    marginTop : "10px",
+                                    cursor : "pointer"
+                                }}
+                                onClick={()=> setPopupOpen(true)}
+                            >
+                                Подробнее...
+                            </div> */}
                             <div>
                                 {globalContent[props.lang].mainPageContent[content].chat2}
                             </div>
@@ -373,6 +403,7 @@ export function MainPage(props){
                     </div>
                 </div>
             </div>
+        </div>
         // </Layout>
     )
 }

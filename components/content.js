@@ -2,7 +2,7 @@ export const globalContent = [
     {
         mainPageContent: [
             {
-                heading: "Что такое SOUPP?",
+                heading: "Что такое ",
                 subheading : "SOUPP CRYPTO CAPITAL, именуемое далее как SPCC - это сообщество людей, мотивированных и зацикленных на свободе: свободе дела и слова, свободе действия и передвижения в рамках финансовой свободы. Это люди, чей упор сделан на финансовой грамотности и независимости от предрассудков, обстоятельств, посредством работы на перспективном, высоковолатильном рынке.",
                 tokyo : "Токио",
                 london : "Лондон",
@@ -151,7 +151,7 @@ export const globalContent = [
     {
         mainPageContent: [
             {
-                heading: "What is SOUPP crypto?",
+                heading: "What is ",
                 subheading : "SOUPP CRYPTO CAPITAL, hereinafter referred to as SPCC , is a community of people who are motivated and fixated on freedom: freedom of business and speech, freedom of action and movement within the framework of financial freedom. These are people whose focus is on financial literacy and independence from prejudices, circumstances, through working in a promising, highly volatile market.",
                 tokyo : "Tokyo",
                 london : "London",
