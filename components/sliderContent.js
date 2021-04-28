@@ -66,3 +66,39 @@ export const testimonialContentEn = [
         text : "Although this is not the only trade chat I'm in, your chat is like a second home to me. Your community's support has helped me make 3x more money than before!"
     }
 ]
+
+export const sliderVideos = [
+    {
+        src : "/IMG_2326.mp4",
+        text: [
+            {
+                text : "#futures — кратко/среднесрочные прогнозы на криптовалютном рынке в паре к USDT и к BTC."
+            },
+            {
+                text : "#futures — short / medium-term forecasts in the cryptocurrency market in pairs to USDT and BTC."
+            }
+        ]
+    },
+    {
+        src : "/IMG_2327.mp4",
+        text: [
+            {
+                text : "#priceprediction — долгосрочные прогнозы на криптовалютном рынке, как в паре к USDT, так и к BTC."
+            },
+            {
+                text : "#priceprediction — long-term forecasts for the cryptocurrency market, both in pairs to USDT and BTC."
+            }
+        ]
+    },
+    {
+        src : "/TelegramVideoCompressed.mp4",
+        text: [
+            {
+                text : "#priceprediction — долгосрочные прогнозы на криптовалютном рынке, как в паре к USDT, так и к BTC."
+            },
+            {
+                text : "#priceprediction — long-term forecasts for the cryptocurrency market, both in pairs to USDT and BTC."
+            }
+        ]
+    }
+]

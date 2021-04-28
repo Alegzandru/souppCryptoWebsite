@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import {globalContent} from "./content"
 import CountUp from 'react-countup';
 import Fade from 'react-reveal/Fade';
+import {sliderVideos} from "./sliderContent"
+import Image from 'next/image'
 // import video from '../public/TelegramVideo.mp4'
 
 
@@ -11,6 +13,9 @@ export function AboutUsStats(props){
 
     const [hoveredButton, setHoveredButton] = useState(false);
     const [showStat, setShowStat] = useState(false)
+    const [currentVideo, setCurrentVideo] = useState(0)
+    const [hovered1, setHovered1] = useState(false)
+    const [hovered2, setHovered2] = useState(false)
 
     const scrollPosition = () => {
         setShowStat(window.scrollY > 700)
@@ -31,9 +36,9 @@ export function AboutUsStats(props){
                             {globalContent[props.lang].aboutUsStatsContent.heading}
                         </h1>
                         <p className={styles.subheading}>
-                            {globalContent[props.lang].aboutUsStatsContent.subheading}
+                            {sliderVideos[currentVideo].text[props.lang].text}
                         </p>
-                        <div className={styles.statsWrapper}>
+                        {/* <div className={styles.statsWrapper}>
                             <div className={styles.statsContainer}>
                                 <p className={styles.pWhite}>
                                     {globalContent[props.lang].aboutUsStatsContent.stat1.number}
@@ -73,7 +78,7 @@ export function AboutUsStats(props){
                                     {globalContent[props.lang].aboutUsStatsContent.stat3.text}
                                 </p>
                             </div>
-                        </div>
+                        </div> */}
                         <a
                             href="https://t.me/joinchat/AAAAAEgPEa1HRUVe6vN8Gw"
                             className={styles.link}
@@ -89,12 +94,85 @@ export function AboutUsStats(props){
                         </a>
                     </Fade>
                 </div>
-                <div className={styles.imgWrapper}>
-                    <img className={styles.img} src="/samsung.png"></img>
-                    <video autoPlay muted loop className={styles.video}>
-                        <source src="/TelegramVideoCompressed.mp4" type="video/mp4"/>
-                    </video>
-                    {/* <video src={video}></video> */}
+                <div>
+                    {
+                        sliderVideos.map((video, index)=>
+                        <div 
+                            className={styles.imgWrapper}
+                            style={{
+                                display : index == currentVideo ? "block" : "none"
+                            }}
+                            key={index*21}
+                        >
+                            <img className={styles.img} src="/samsung.png"></img>
+                            <video autoPlay muted loop className={styles.video}>
+                                <source src={video.src} type="video/mp4"/>
+                            </video>
+                        </div>
+                        )
+                    }
+
+                            <div className={styles.changeSlideButtonsWrapper}>
+                                <div   
+                                    className={styles.changeSlideButton}
+                                    onMouseEnter={() => setHovered1(true)}
+                                    onMouseLeave={() => setHovered1(false)}
+                                    style={{
+                                        backgroundColor: hovered1? "transparent" : "#AFDF9D"
+                                    }}
+                                    onClick={() => {
+                                        if(currentVideo == 0){
+                                            setCurrentVideo(sliderVideos.length-1)
+                                        }
+                                        else{
+                                            setCurrentVideo(currentVideo-1)
+                                        }
+                                    }}
+                                >
+                                    <Image
+                                        src={hovered1? "/greenArrow.svg" : "/leftArrowInactive.svg"}
+                                        height={60}
+                                        width={60}
+                                    >
+                                    </Image>
+                                </div>
+                                <div 
+                                    className={styles.changeSlideButton}
+                                    onMouseEnter={() => setHovered2(true)}
+                                    onMouseLeave={() => setHovered2(false)}
+                                    style={{backgroundColor: hovered2? "transparent" : "#AFDF9D"}}
+                                    onClick={() => {
+                                        if(currentVideo == sliderVideos.length-1){
+                                            setCurrentVideo(0)
+                                        }
+                                        else{
+                                            setCurrentVideo(currentVideo+1)
+                                        }
+                                    }}
+                                >
+                                    <Image
+                                        src={hovered2? "/greenArrow.svg" : "/leftArrowInactive.svg"}
+                                        height={60}
+                                        width={60}
+                                        className={styles.rotatedImg}
+                                    >
+                                    </Image>
+                                </div>
+                            </div>
+
+                    <div className={styles.buttonsWrapper}>
+                    {
+                        sliderVideos.map((video, index)=>
+                        <div 
+                            className={styles.buttonVideo}
+                            style={{
+                                backgroundColor : index == currentVideo ? "#AFDF9D" : "#E5E5E5"
+                            }}
+                            onClick={()=> setCurrentVideo(index)}
+                            key={index*11}
+                        />)
+                    }
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 .wrapper{
-    height: 900px;
+    height: auto;
     /* background-color: #253D57; */
     background-color: #2D3E50;
 }
@@ -18,8 +18,8 @@
 }
 
 .textDivWrapper{
-    width: 620px;
-    margin-top: 30px;
+    width: 590px;
+    margin-top: 100px;
 }
 
 .h1{
@@ -78,7 +78,7 @@
     width: 300px;
     height: 615px;
 
-    transform: perspective(1000px) rotateY(15deg);
+    /* transform: perspective(1000px) rotateY(15deg); */
 }
 
 .img{
@@ -90,6 +90,23 @@
     margin-top: 0px;
 }
 
+.buttonsWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonVideo{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #E5E5E5;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
 .button{
     width: 300px;
     height: 60px;
@@ -99,8 +116,8 @@
     border-radius: 4px;
 
     margin-top: 48px;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
 
     text-align: center;
     font-size:30px;
@@ -154,6 +171,35 @@
     margin-top: 5px;
     margin-left: -300px;
 }
+
+.changeSlideButtonsWrapper{
+    width: 140%;
+    margin-left: calc((-140% + 100%)/2 );
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-top: -350px;
+    margin-bottom: 320px;
+}
+
+.changeSlideButton{
+    width: 60px;
+    height: 60px;
+    background: #AFDF9D;
+    opacity: 0.7;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.rotatedImg{
+    transform: rotate(180deg);
+}
+
 
 
 @media screen and (max-width: 992px){
@@ -220,6 +266,29 @@
         margin-left: -300px;
     }
 
+    .buttonsWrapper{
+        margin-top: 100px;
+    }
+
+    .changeSlideButtonsWrapper{
+        width: 140%;
+        margin-left: calc((-140% + 100%)/2 );
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    
+        margin-top: -270px;
+        margin-bottom: 300px;
+    }
+
+    .button{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 @media screen and (max-width: 524px){
@@ -270,7 +339,7 @@
         align-items: center;
     }
     
-    .img{
+    /* .img{
         height: 460px;
         width: 224px;
         margin-top: 60px;
@@ -282,10 +351,26 @@
         width: 224px;
         height: 430px;
     
-        /* margin-top: 0;
-        margin-left: 5px; */
         margin-top: 20px;
         margin-left: 0px;
+    } */
+
+    .img{
+        height: 615px;
+        width: 300px;
+        margin-top: 80px;
+    }
+
+    .video{
+        position: absolute;
+        z-index: 0;
+        width: 300px;
+        height: 580px;
+    
+        /* margin-top: 0;
+        margin-left: 5px; */
+        margin-top: 87px;
+        margin-left: -300px;
     }
     
     .button{
@@ -295,5 +380,23 @@
         margin-top: 30px;
         font-size: 22px;
         line-height: 50px;
+    }
+
+    .buttonsWrapper{
+        /* margin-top: -20px; */
+    }
+
+    .changeSlideButtonsWrapper{
+        width: 120%;
+        margin-left: calc((-120% + 100%)/2 );
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        margin-top: -270px;
+        margin-bottom: 300px;
     }
 }

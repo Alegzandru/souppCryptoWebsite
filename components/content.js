@@ -42,7 +42,7 @@ export const globalContent = [
         ],
         aboutUsStatsContent: 
         {
-            heading : "Нам есть чем похвастаться",
+            heading : "Наши чаты",
             subheading : "Мы помогаем нашим клиентом обрести аналитическое мышление для полноценного анализа биржи, обеспечевая их постоянным и стабильным заработком.",
             button : "Присоединится",
             stat1:{
@@ -191,7 +191,7 @@ export const globalContent = [
         ],
         aboutUsStatsContent: 
         {
-            heading : "We are proud of our results",
+            heading : "Our chats",
             subheading : "We teach our clients analytical skills for a complex stock market analysis, that assures a stable and constant income.",
             button : "Join us",
             stat1:{

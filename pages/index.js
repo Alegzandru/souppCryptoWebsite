@@ -1,5 +1,5 @@
 import {MainPage} from "../components/mainPage"
-import {AboutUsStats} from "../components/aboutUsStats2"
+import {AboutUsStats} from "../components/aboutUsStats"
 import {AboutUsTrading} from "../components/aboutUsTrading"
 import {OurServices} from "../components/ourServices"
 import {Testimonials} from "../components/testimonials"
