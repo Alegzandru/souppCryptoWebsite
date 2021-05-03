@@ -1,0 +1,85 @@
+.popupWrapper{
+    position: fixed;
+    height: 600px;
+    width: 940px;
+    left: calc((100vw - 940px)/2);
+    top: calc((100vh - 600px)/2);
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #E5E5E5;
+}
+
+.heading{
+    color: #2D3E50;
+    font-size: 40px;
+    font-family: Futura PT custom Demi;
+    text-decoration: underline;
+
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.subheading{
+    color: #2D3E50;
+    font-size: 26px;
+    font-family: Futura PT custom Mediu;
+
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.button{
+    width: 220px;
+    height: 40px;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: #AFDF9D;
+
+    color: #2D3E50;
+    font-size: 24px;
+    font-family: Futura PT custom Demi;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px){
+    .popupWrapper{
+        height: 650px;
+        width: calc(100% - 32px);
+        left: calc(16px);
+        top: calc((100vh - 650px)/2);
+    }
+}
+
+@media screen and (max-width: 528px){
+    .popupWrapper{
+        height: calc(100vh - 120px);
+        width: calc(100% - 32px);
+        top: 60px;
+    }
+
+    .heading{
+        font-size: 3.5vh;
+        margin-top: 30px;
+    }
+
+    .subheading{
+        margin-top: 20px;
+        font-size: 2.2vh;
+    }
+
+    .button{
+        margin-top: 30px;
+    }
+}

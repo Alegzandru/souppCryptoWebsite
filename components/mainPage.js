@@ -1,8 +1,9 @@
 import styles from "../styles/mainPage.module.css"
 import Layout from "../components/layout"
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import {globalContent} from "./content"
 import Fade from 'react-reveal/Fade';
+import { PopupContext } from "./context";
 
 
 export function MainPage(props){
@@ -13,7 +14,7 @@ export function MainPage(props){
     const [scrolledBy, setScrolledBy] = useState(false)
     const [clickedMobile, setClickedMobile] = useState(false)
     const [content, setContent] = useState(0)
-    const [popupOpen, setPopupOpen] = useState(0)
+    const {popupOpen, setPopupOpen} = useContext(PopupContext)
 
     const [active1, setActive1] = useState(0)
     const [active2, setActive2] = useState(0)
@@ -77,7 +78,8 @@ export function MainPage(props){
             {/* <div 
                 className={styles.popupWrapper}
                 style={{
-                    display : popupOpen ? "block" : "none"
+                    display : popupOpen ? "block" : "none",
+                    filter : "brightness(100%)"
                 }}
             ></div> */}
             <div className={styles.mainPageWrapper}>

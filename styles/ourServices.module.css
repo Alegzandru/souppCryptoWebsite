@@ -32,7 +32,7 @@
 }
 
 .serviceWrapper{
-    width: 460px;
+    width: 300px;
 }
 
 .leftImg{
@@ -50,11 +50,35 @@
     z-index: 1;
 }
 
+.serviceBox{
+    position: relative;
+    z-index: 2;
+    width: 300px;
+    height: 280px;
+
+    background-color: #2D3E50;
+    border: 4px solid #E5E5E5;
+
+    margin-top: -564px;
+}
+
+.serviceBoxMiddle{
+    position: relative;
+    z-index: 2;
+    width: 300px;
+    height: 280px;
+
+    background-color: #2D3E50;
+    border: 4px solid #E5E5E5;
+
+    margin-top: 100px;
+}
+
 .serviceBox1{
     position: relative;
     z-index: 2;
-    width: 460px;
-    height: 300px;
+    width: 300px;
+    height: 280px;
 
     background-color: #2D3E50;
     border: 4px solid #E5E5E5;
@@ -65,8 +89,8 @@
 .serviceBox2{
     position: relative;
     z-index: 2;
-    width: 460px;
-    height: 300px;
+    width: 300px;
+    height: 280px;
 
     background-color: #2D3E50;
     border: 4px solid #E5E5E5;
@@ -80,8 +104,8 @@
     margin-right: auto;
 
     font-family: Futura PT custom Demi;
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 29px;
+    line-height: 29px;
     text-align: center;
 
     color: #FFFFFF;
@@ -90,13 +114,15 @@
 
 .serviceTextImgWrapper{
     width: 300px;
+    height: 180px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
 
     margin-left: auto;
     margin-right: auto;
+    margin-top: -20px;
 }
 
 .serviceText{
@@ -106,30 +132,31 @@
     line-height: 21px;
 
     color: #E5E5E5;
-    margin-top: 0px;
+    /* margin-top: 0px; */
 }
 
 .serviceImg{
-    height: 140px;
-    width: 140px;
+    height: 100px;
+    width: 100px;
+    margin-right: 20px;
 }
 
-.button1{
+.button{
     position: relative;
     z-index: 2;
 
-    width: 300px;
+    width: 220px;
     height: 60px;
     background-color: #2D3E50;
     border: 2px solid #AFDF9D;
     box-shadow: 6px 6px 0px #AFDF9D;
     border-radius: 4px;
 
-    margin-left: 80px;
+    margin-left: 40px;
     margin-top: 32px;
 
     text-align: center;
-    font-size: 30px;
+    font-size: 26px;
     line-height: 60px;
     color: white;
     font-family: Futura PT custom Demi;
@@ -137,42 +164,11 @@
     cursor: pointer;
 }
 
-.button2{
-    position: relative;
-    z-index: 2;
-
-    width: 300px;
-    height: 60px;
-    background-color: #2D3E50;
-    border: 2px solid #AFDF9D;
-    box-shadow: 6px 6px 0px #AFDF9D;
-    border-radius: 4px;
-
-    margin-left: 80px;
-    margin-top: 32px;
-
-    text-align: center;
-    font-size: 30px;
-    line-height: 60px;
-    color: white;
-    font-family: Futura PT custom Demi;
-
-    cursor: pointer;
-}
-
-.button1:active{
+.button:active{
     box-shadow: 2px 2px 0px #AFDF9D;
 }
 
-.button1:focus{
-    box-shadow: 2px 2px 0px #AFDF9D;
-}
-
-.button2:active{
-    box-shadow: 2px 2px 0px #AFDF9D;
-}
-
-.button2:focus{
+.button:focus{
     box-shadow: 2px 2px 0px #AFDF9D;
 }
 
@@ -244,7 +240,7 @@
     .rightImg{
         height: 524px;
         width: 524px;
-        margin-top: 80px;
+        margin-top: 0px;
     }
     
     .serviceBox1{
@@ -252,6 +248,15 @@
         height: 300px;
 
         margin-top: -450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .serviceBoxMiddle{
+        width: 460px;
+        height: 300px;
+
+        margin-top: 100px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -283,13 +288,7 @@
         line-height: 17px; */
     }
     
-    .button1{
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 22px;
-    }
-    
-    .button2{
+    .button{
         margin-left: auto;
         margin-right: auto;
         margin-top: 22px;
@@ -347,6 +346,15 @@
         /* padding-left: 30px;
         padding-right: 30px; */
     }
+
+    .serviceBoxMiddle{
+        width: 100%;
+        height: 245px;
+    
+        margin-left: auto;
+        margin-right: auto;
+
+    }
     
     .serviceBox2{
         width: 100%;
@@ -365,7 +373,7 @@
         font-family: Futura PT custom Demi;
         font-size: 22px;
         line-height: 26px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
     
     .serviceTextImgWrapper{
@@ -395,16 +403,7 @@
         margin-left: 20px;
     }
     
-    .button1{
-        width: 224px;
-        height: 50px;
-        margin-top: 32px;
-    
-        font-size: 22px;
-        line-height: 50px;
-    }
-    
-    .button2{
+    .button{
         width: 224px;
         height: 50px;
         margin-top: 32px;

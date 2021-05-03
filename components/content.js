@@ -63,10 +63,10 @@ export const globalContent = [
         {
             heading : "Мы всегда анализируем рынок",
             heading2: "Наш опыт",
-            subheading : "За 4 года анализа рынка, мы научились качественно предсказывать падение/рост криптовалют и акции. Цифры не лгут!",
+            subheading : "За 4 года анализа рынка, мы научились качественно предсказывать падение/рост криптовалют и акции.",
             stat1:{
                 number : "1/3",
-                text: " стабильный К-К"
+                text: " стабильный R-R"
             },
             stat2:{
                 number : "543",
@@ -80,10 +80,12 @@ export const globalContent = [
         ourServicesContent:
         {
             heading: "Наши услуги",
-            coursesHeading: "Курсы по инвестированию",
-            coursesInfo: "Наши эксперты помогут вам понять как работает биржа, и как ее анализировать для собственной выгоды.",
-            signalsHeading: "Сигналы для трейдеров",
+            coursesHeading: "Курс по основам рынка",
+            coursesInfo: "Наши коллеги помогут вам понять как работает рынок, как его анализировать для извлечения прибыли.",
+            signalsHeading: "Сделки от ведущих трейдеров комьюнити",
             signalsInfo: "Мы также предостовляем сигналы которые помогут вам начать зарабатывать прямо сейчас!",
+            indicatorsHeading : "Авторские индикаторы состояния рынка",
+            indicatorsInfo : "Мы собрали в едины пак 43 индикатора состояния рынка. С ними поведение цены будет более предсказуемо.",
             button: "Присоединится"
         },
         testimonialsContent:
@@ -145,7 +147,8 @@ export const globalContent = [
         },
         disclaimer : {
             heading : "!Не является индивидуальной инвестиционной рекомендацией",
-            text : "Данная информация не является индивидуальной инвестиционной рекомендацией, и финансовые инструменты либо операции, упомянутые в ней, могут не соответствовать Вашему инвестиционному профилю и инвестиционным целям (ожиданиям). Определение соответствия финансового инструмента либо операции Вашим интересам, инвестиционным целям, инвестиционному горизонту и уровню допустимого риска является Вашей задачей. SPCC не несет ответственности за возможные убытки в случае совершения операций либо инвестирования в финансовые инструменты, упомянутые в данной информации, и не рекомендует использовать указанную информацию в качестве единственного источника информации при принятии инвестиционного решения."
+            text : "Данная информация не является индивидуальной инвестиционной рекомендацией, и финансовые инструменты либо операции, упомянутые в ней, могут не соответствовать Вашему инвестиционному профилю и инвестиционным целям (ожиданиям). SPCC не несет ответственности за возможные убытки в случае совершения операций либо инвестирования в финансовые инструменты, упомянутые в данной информации, и не рекомендует использовать указанную информацию в качестве единственного источника информации при принятии инвестиционного решения.",
+            button : "Продолжить"
         }
     },
     {
@@ -212,9 +215,9 @@ export const globalContent = [
         {
             heading : "We always keep an eye on the market",
             heading2: "Our experience",
-            subheading : "During the last 4 years we learnt how to correctly interpret the market shifts of the cryptocurrencies and stocks. Numbers don't lie.",
+            subheading : "During the last 4 years we learnt how to correctly interpret the market shifts of the cryptocurrencies and stocks.",
             stat1:{
-                number : "1/5",
+                number : "1/3",
                 text: " Risk/Reward Ratio"
             },
             stat2:{
@@ -229,10 +232,12 @@ export const globalContent = [
         ourServicesContent:
         {
             heading: "Our services",
-            coursesHeading: "Investment courses",
+            coursesHeading: "Market Fundamentals Courses",
             coursesInfo: "Our experts will help you understand how the market works and extract the right information for your own profit.",
-            signalsHeading: "Traders signals",
+            signalsHeading: "Deals from the leading community traders",
             signalsInfo: "We also provide trading signals that will help you earn money right now!",
+            indicatorsHeading : "Proprietary indicators of market conditions",
+            indicatorsInfo: "We have collected 43 market indicators in a single pack. With them, price behavior will be more predictable.",
             button: "Join us"
         },
         testimonialsContent:
@@ -294,7 +299,8 @@ export const globalContent = [
         },
         disclaimer : {
             heading : "! Not an individual investment recommendation",
-            text : "The Content is for informational purposes only, you should not construe any such information or other material as legal, tax, investment, financial, or other advice. Nothing contained on our Site constitutes a solicitation, recommendation, endorsement, or offer by SPCC or any third party service provider to buy or sell any securities or other financial instruments in this or in in any other jurisdiction in which such solicitation or offer would be unlawful under the securities laws of such jurisdiction. All Content on this site is information of a general nature and does not address the circumstances of any particular individual or entity. Nothing in the Site constitutes professional and/or financial advice, nor does any information on the Site constitute a comprehensive or complete statement of the matters discussed or the law relating thereto. SPCC is not a fiduciary by virtue of any person’s use of or access to the Site or Content. You alone assume the sole responsibility of evaluating the merits and risks associated with the use of any information or other Content on the Site before making any decisions based on such information or other Content. In exchange for using the Site, you agree not to hold SPCC, its affiliates or any third party service provider liable for any possible claim for damages arising from any decision you make based on information or other Content made available to you through the Site."
+            text : "The Content is for informational purposes only, you should not construe any such information or other material as legal, tax, investment, financial, or other advice. Nothing contained on our Site constitutes a solicitation, recommendation, endorsement, or offer by SPCC or any third party service provider to buy or sell any securities or other financial instruments in this or in in any other jurisdiction in which such solicitation or offer would be unlawful under the securities laws of such jurisdiction. All Content on this site is information of a general nature and does not address the circumstances of any particular individual or entity. Nothing in the Site constitutes professional and/or financial advice, nor does any information on the Site constitute a comprehensive or complete statement of the matters discussed or the law relating thereto. SPCC is not a fiduciary by virtue of any person’s use of or access to the Site or Content. You alone assume the sole responsibility of evaluating the merits and risks associated with the use of any information or other Content on the Site before making any decisions based on such information or other Content. In exchange for using the Site, you agree not to hold SPCC, its affiliates or any third party service provider liable for any possible claim for damages arising from any decision you make based on information or other Content made available to you through the Site.",
+            button: "Continue"
         }
     }
 ]

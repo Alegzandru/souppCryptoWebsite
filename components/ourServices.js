@@ -12,6 +12,7 @@ export function OurServices(props){
     
     const [hoveredButton1, setHoveredButton1] = useState(false);
     const [hoveredButton2, setHoveredButton2] = useState(false);
+    const [hoveredButton3, setHoveredButton3] = useState(false);
 
 
     return(
@@ -47,7 +48,7 @@ export function OurServices(props){
                     >
                         <Bounce left>
                             <div
-                                className={styles.button1}
+                                className={styles.button}
                                 onMouseEnter={() => setHoveredButton1(true)}
                                 onMouseLeave={() => setHoveredButton1(false)}
                                 style={{color: hoveredButton1? "#AFDF9D" : "white"}}
@@ -57,6 +58,41 @@ export function OurServices(props){
                         </Bounce>
                     </a>
                 </div>
+
+
+                <div className={styles.serviceWrapper}>
+                    <div className={styles.serviceBoxMiddle}>
+                        <h2 className={styles.h2}>
+                            {globalContent[props.lang].ourServicesContent.indicatorsHeading}
+                        </h2>
+                        <div className={styles.serviceTextImgWrapper}>
+                            <img
+                                src="/analytics.svg"
+                                className={styles.serviceImg}
+                            />
+                            <p className={styles.serviceText}>
+                                {globalContent[props.lang].ourServicesContent.indicatorsInfo}
+                            </p>
+                        </div>
+                    </div>
+                    <a
+                        href="https://t.me/joinchat/AAAAAEgPEa1HRUVe6vN8Gw"
+                        className={styles.link}
+                    >
+                        <Bounce left>
+                            <div
+                                className={styles.button}
+                                onMouseEnter={() => setHoveredButton3(true)}
+                                onMouseLeave={() => setHoveredButton3(false)}
+                                style={{color: hoveredButton3? "#AFDF9D" : "white"}}
+                            >
+                                {globalContent[props.lang].ourServicesContent.button}
+                            </div>
+                        </Bounce>
+                    </a>
+                </div>
+
+
                 <div className={styles.serviceWrapper}>
                     <img
                         src="/greenStocks.svg"
@@ -83,7 +119,7 @@ export function OurServices(props){
                     >
                         <Bounce left>
                             <div 
-                                className={styles.button2}
+                                className={styles.button}
                                 onMouseEnter={() => setHoveredButton2(true)}
                                 onMouseLeave={() => setHoveredButton2(false)}
                                 style={{color: hoveredButton2? "#AFDF9D" : "white"}}
@@ -93,6 +129,8 @@ export function OurServices(props){
                         </Bounce>
                     </a>
                 </div>
+
+
             </div>
         </div>
     </div>
