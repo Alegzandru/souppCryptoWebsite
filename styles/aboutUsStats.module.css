@@ -285,8 +285,9 @@
     }
 
     .button{
-        margin-left: auto;
-        margin-right: auto;
+        /* margin-left: auto;
+        margin-right: auto; */
+        display: none;
     }
 
 }
@@ -304,7 +305,7 @@
     
     .textDivWrapper{
         width: 100%;
-        margin-top: 0px;
+        margin-bottom: -60px;
     }
     
     .h1{
@@ -373,14 +374,14 @@
         margin-left: -300px;
     }
     
-    .button{
+    /* .button{
         width: 224px;
         height: 50px;
 
         margin-top: 30px;
         font-size: 22px;
         line-height: 50px;
-    }
+    } */
 
     .buttonsWrapper{
         /* margin-top: -20px; */

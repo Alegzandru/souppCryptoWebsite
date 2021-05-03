@@ -6,8 +6,9 @@
 .mainPageContainer{
     height: auto;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 
     padding-top: 120px;
 }
@@ -218,6 +219,8 @@
     overflow: hidden;
     position: relative;
     z-index: 1;
+
+    display: none;
 }
 
 .h1{
@@ -226,6 +229,16 @@
     font-family: Futura PT custom Demi;
     margin-bottom: 60px;
     margin-top: 0px;
+}
+
+.h1Desktop{
+    font-size: 38px;
+    color: white;
+    font-family: Futura PT custom Demi;
+    margin-bottom: -60px;
+    margin-top: 0px;
+    position: relative;
+    z-index: 2;
 }
 
 .h2{
@@ -471,6 +484,8 @@
         width: 100%;
         margin-left: 0px;
         overflow: visible;
+
+        display: flex;
     }
 
     .h1{
@@ -484,6 +499,10 @@
         letter-spacing: 1px;
         margin-bottom: 20px;
         margin-top: 0px;
+    }
+
+    .h1Desktop{
+        display: none;
     }
     
     .h2{

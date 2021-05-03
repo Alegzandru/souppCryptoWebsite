@@ -36,7 +36,10 @@ export function AboutUsStats(props){
                             {globalContent[props.lang].aboutUsStatsContent.heading}
                         </h1>
                         <p className={styles.subheading}>
-                            {sliderVideos[currentVideo].text[props.lang].text}
+                            {sliderVideos[currentVideo].text[props.lang].text1}
+                        </p>
+                        <p className={styles.subheading}>
+                            {sliderVideos[currentVideo].text[props.lang].text2}
                         </p>
                         {/* <div className={styles.statsWrapper}>
                             <div className={styles.statsContainer}>

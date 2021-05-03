@@ -72,10 +72,10 @@ export const sliderVideos = [
         src : "/IMG_2326.mp4",
         text: [
             {
-                text : "#futures — кратко/среднесрочные прогнозы на криптовалютном рынке в паре к USDT и к BTC."
+                text1 : "#futures — кратко/среднесрочные прогнозы на криптовалютном рынке в паре к USDT и к BTC."
             },
             {
-                text : "#futures — short / medium-term forecasts in the cryptocurrency market in pairs to USDT and BTC."
+                text1 : "#futures — short / medium-term forecasts in the cryptocurrency market in pairs to USDT and BTC."
             }
         ]
     },
@@ -83,10 +83,10 @@ export const sliderVideos = [
         src : "/IMG_2327.mp4",
         text: [
             {
-                text : "#priceprediction — долгосрочные прогнозы на криптовалютном рынке, как в паре к USDT, так и к BTC."
+                text1 : "#priceprediction — долгосрочные прогнозы на криптовалютном рынке, как в паре к USDT, так и к BTC."
             },
             {
-                text : "#priceprediction — long-term forecasts for the cryptocurrency market, both in pairs to USDT and BTC."
+                text1 : "#priceprediction — long-term forecasts for the cryptocurrency market, both in pairs to USDT and BTC."
             }
         ]
     },
@@ -94,10 +94,12 @@ export const sliderVideos = [
         src : "IMG_0877.mp4",
         text: [
             {
-                text : `#tradetape - торговая лента. У каждого трейдера "musthave" в арсенале дневник, куда записываются текущие мысли, сделки, прогнозы и события. По ней вы сможете взглянуть на себя со стороны, на каком этапе вы были 1-2-3 года назад. Формат ведения - свободный.`
+                text1 : `#tradetape - торговая лента.`,
+                text2 : `У каждого трейдера "musthave" в арсенале дневник, куда записываются текущие мысли, сделки, прогнозы и события. По ней вы сможете взглянуть на себя со стороны, на каком этапе вы были 1-2-3 года назад. Формат ведения - свободный.`
             },
             {
-                text : `#tradetape is a trading tape. Each trader must have a diary in his arsenal, where current thoughts, deals, forecasts and events are recorded. On it you can look at yourself from the outside, at what stage you were 1-2-3 years ago. The lead format is free.`
+                text1 : `#tradetape is a trading tape.`,
+                text2 : `Each trader must have a diary in his arsenal, where current thoughts, deals, forecasts and events are recorded. On it you can look at yourself from the outside, at what stage you were 1-2-3 years ago. The lead format is free.`
             }
         ]
     },
@@ -105,10 +107,12 @@ export const sliderVideos = [
         src : "IMG_0878.mp4",
         text: [
             {
-                text : "#news - важные новости с фондового и крипто рынка, отчеты, цифры, выступления. Важная информация, являющаяся тригером к движению цены."
+                text1 : "#news - важные новости с фондового и крипто рынка, отчеты, цифры, выступления.",
+                text2 : "Важная информация, являющаяся тригером к движению цены."
             },
             {
-                text : "#news - important news from the stock and crypto market, reports, figures, speeches. Important information triggering price movement."
+                text1 : "#news - important news from the stock and crypto market, reports, figures, speeches.",
+                text2 : "Important information triggering price movement."
             }
         ]
     },
@@ -116,10 +120,12 @@ export const sliderVideos = [
         src : "IMG_0879.mp4",
         text: [
             {
-                text : "#marketview - главная информация со всех рынков: криптовалютные и фондовые индексы, фьючерсы и опционы, форекс и др. Вербальные интервенции включают тригеры, а вот фундамент этих направлений закладывается именно тут. Как их считывать, на что обращать внимание у нас в сервисах."
+                text1 : "#marketview - главная информация со всех рынков: криптовалютные и фондовые индексы, фьючерсы и опционы, форекс и др.",
+                text2 : "Вербальные интервенции включают тригеры, а вот фундамент этих направлений закладывается именно тут. Как их считывать, на что обращать внимание у нас в сервисах."
             },
             {
-                text : "#marketview - the main information from all markets: cryptocurrency and stock indices, futures and options, forex, etc. Verbal interventions include triggers, but the foundation of these areas is laid here. How to read them, what to look for in our services."
+                text1 : "#marketview - the main information from all markets: cryptocurrency and stock indices, futures and options, forex, etc.",
+                text2 : "Verbal interventions include triggers, but the foundation of these areas is laid here. How to read them, what to look for in our services."
             }
         ]
     },
@@ -127,10 +133,12 @@ export const sliderVideos = [
         src : "IMG_0880.mp4",
         text: [
             {
-                text : `#commodities - анализ и прогнозы сырьевых активов. Торговать сырьем лично для меня- малоприятное "удовольствие", но понимать обязательно, как мы поняли это в марте 2020, когда нефть ушла в отрицательные значения.`
+                text1 : `#commodities - анализ и прогнозы сырьевых активов.`,
+                text2 : "Торговать сырьем лично для меня- малоприятное `удовольствие`, но понимать обязательно, как мы поняли это в марте 2020, когда нефть ушла в отрицательные значения."
             },
             {
-                text : `#commodities - analysis and forecasts of commodity assets. Personally, trading in raw materials is not something I like, but it is imperative to understand, as we understood this in March 2020, when oil went into negative values.`
+                text1 : `#commodities - analysis and forecasts of commodity assets.`,
+                text2 : " Personally, trading in raw materials is not something I like, but it is imperative to understand, as we understood this in March 2020, when oil went into negative values."
             }
         ]
     },
@@ -138,10 +146,12 @@ export const sliderVideos = [
         src : "IMG_0881.mp4",
         text: [
             {
-                text : "#papers - анализ и прогнозы акций самых различных компаний. Все знают историю с GameStop? Дак вот мы её пропустили..."
+                text1 : "#papers - анализ и прогнозы акций самых различных компаний.",
+                text2 : "Все знают историю с GameStop? Дак вот мы её пропустили..."
             },
             {
-                text : "#papers - analysis and forecasts of stocks of various companies. Everyone knows the Gamestop story. Well, we missed it..."
+                text1 : "#papers - analysis and forecasts of stocks of various companies.",
+                text2 : "Everyone knows the Gamestop story. Well, we missed it..."
             }
         ]
     },
@@ -149,10 +159,10 @@ export const sliderVideos = [
         src : "IMG_0888.mp4",
         text: [
             {
-                text : "#digest - Краткий обзор работы рынков, SOUPP комьюнити, наших успехов и планах."
+                text1 : "#digest - Краткий обзор работы рынков, SOUPP комьюнити, наших успехов и планах."
             },
             {
-                text : "#digest - Brief overview of the markets, SOUPP community, our successes and plans."
+                text1 : "#digest - Brief overview of the markets, SOUPP community, our successes and plans."
             }
         ]
     },
@@ -160,10 +170,12 @@ export const sliderVideos = [
         src : "IMG_0889.mp4",
         text: [
             {
-                text : "#invest - проекты под инвестирование, ноды, пулы и тд. До торговли на фьючерсах с кредитным плечом, наша деятельность стартовала с инвестирования в 2017 в ICO. С тех пор достойные проекты выросли в десятки-сотни и даже тысячи раз, но это не мешает стартовать и новым..."
+                text1 : "#invest - проекты под инвестирование, ноды, пулы и тд.",
+                text2 : "До торговли на фьючерсах с кредитным плечом, наша деятельность стартовала с инвестирования в 2017 в ICO. С тех пор достойные проекты выросли в десятки-сотни и даже тысячи раз, но это не мешает стартовать и новым..."
             },
             {
-                text : "#invest - projects for investment, nodes, pools, etc. Before trading in leveraged futures, our business started with investing in 2017 in ICOs. Since then, worthy projects have grown tens, hundreds and even thousands of times, but this does not prevent new ones from starting ..."
+                text1 : "#invest - projects for investment, nodes, pools, etc.",
+                text2 : "Before trading in leveraged futures, our business started with investing in 2017 in ICOs. Since then, worthy projects have grown tens, hundreds and even thousands of times, but this does not prevent new ones from starting ..."
             }
         ]
     },
@@ -171,10 +183,12 @@ export const sliderVideos = [
         src : "IMG_0890.mp4",
         text: [
             {
-                text : "#signals - полуавтоматизированные торговые сигналы с полной выкладкой по входам, стопам и тейкам. Для опытного трейдера чужие сигналы - бред, если только он не подглядывает у трейдера с более высокой квалификацией и большим опытом в рынке. Разумеется с пониманием дела. В любом случае есть вход, стоп, тейк. Риск каждый определяет для себя сам."
+                text1 : "#signals - полуавтоматизированные торговые сигналы с полной выкладкой по входам, стопам и тейкам.",
+                text2 : "Для опытного трейдера чужие сигналы - бред, если только он не подглядывает у трейдера с более высокой квалификацией и большим опытом в рынке. Разумеется с пониманием дела. В любом случае есть вход, стоп, тейк. Риск каждый определяет для себя сам."
             },
             {
-                text : "#signals semi-automated trading signals with full display of entries, stops and takes. For an experienced trader, other people's signals are nonsense, unless he is peeping at a trader with higher qualifications and more experience in the market. With an understanding of the matter, of course. In any case, there is an entry, stop, take. Everyone determines the risk for himself."
+                text1 : "#signals semi-automated trading signals with full display of entries, stops and takes.",
+                text2 : "For an experienced trader, other people's signals are nonsense, unless he is peeping at a trader with higher qualifications and more experience in the market. With an understanding of the matter, of course. In any case, there is an entry, stop, take. Everyone determines the risk for himself."
             }
         ]
     },
@@ -182,10 +196,10 @@ export const sliderVideos = [
         src : "IMG_0894.mp4",
         text: [
             {
-                text : "#livetrade - группа, в которой участники сообщества делятся своими успехами"
+                text1 : "#livetrade - группа, в которой участники сообщества делятся своими успехами"
             },
             {
-                text : "#livetrade - group where community members share their successes"
+                text1 : "#livetrade - group where community members share their successes"
             }
         ]
     }

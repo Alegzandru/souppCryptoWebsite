@@ -42,7 +42,7 @@ export const globalContent = [
         ],
         aboutUsStatsContent: 
         {
-            heading : "Наши чаты",
+            heading : "Торговые сервисы",
             subheading : "Мы помогаем нашим клиентом обрести аналитическое мышление для полноценного анализа биржи, обеспечевая их постоянным и стабильным заработком.",
             button : "Присоединится",
             stat1:{
@@ -83,7 +83,7 @@ export const globalContent = [
             coursesHeading: "Курс по основам рынка",
             coursesInfo: "Наши коллеги помогут вам понять как работает рынок, как его анализировать для извлечения прибыли.",
             signalsHeading: "Сделки от ведущих трейдеров комьюнити",
-            signalsInfo: "Мы также предостовляем сигналы которые помогут вам начать зарабатывать прямо сейчас!",
+            signalsInfo: "Мы также предостовляем сет-апы которые помогут вам начать зарабатывать прямо сейчас!",
             indicatorsHeading : "Авторские индикаторы состояния рынка",
             indicatorsInfo : "Мы собрали в едины пак 43 индикатора состояния рынка. С ними поведение цены будет более предсказуемо.",
             button: "Присоединится"
@@ -200,7 +200,7 @@ export const globalContent = [
         ],
         aboutUsStatsContent: 
         {
-            heading : "Our chats",
+            heading : "Our trading services",
             subheading : "We teach our clients analytical skills for a complex stock market analysis, that assures a stable and constant income.",
             button : "Join us",
             stat1:{
@@ -241,7 +241,7 @@ export const globalContent = [
             coursesHeading: "Market Fundamentals Courses",
             coursesInfo: "Our experts will help you understand how the market works and extract the right information for your own profit.",
             signalsHeading: "Deals from the leading community traders",
-            signalsInfo: "We also provide trading signals that will help you earn money right now!",
+            signalsInfo: "We also provide trading set-ups that will help you earn money right now!",
             indicatorsHeading : "Proprietary indicators of market conditions",
             indicatorsInfo: "We have collected 43 market indicators in a single pack. With them, price behavior will be more predictable.",
             button: "Join us"

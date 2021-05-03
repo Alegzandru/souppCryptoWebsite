@@ -108,6 +108,12 @@ export function Contacts(props){
                                         className={styles.socialIcon}
                                     ></img>
                                 </a>
+                                <a href="https://www.twitch.tv/souppmarketowners" target="blank">
+                                    <img 
+                                        src="/twitch.svg" 
+                                        className={styles.socialIcon}
+                                    ></img>
+                                </a>
                                 {/* <img src="/facebookIcon3.svg" className={styles.socialIcon}></img> */}
                             </div>
                         </div>

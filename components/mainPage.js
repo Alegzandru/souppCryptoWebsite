@@ -91,6 +91,27 @@ export function MainPage(props){
                         paddingTop : hoveredLogo2 ? "60px" : "120px"
                     }}
                 >
+                    <h1 
+                        className={styles.h1Desktop}
+                        style={{
+                            display : hoveredLogo2 ? "none" : ""
+                        }}
+                    >
+                            {globalContent[props.lang].mainPageContent[content].heading} 
+                            <a 
+                                className={styles.souppLink}
+                                href="https://telegra.ph/SOUPP-crypto-Capital-04-27"
+                                target="blank"
+                                style={{
+                                    textDecoration: "underline",
+                                    color: "#E5E5E5"
+                                }}
+                            >
+                                SOUPP
+                            </a>
+                            ?
+                    </h1>
+
                     <div 
                         className={styles.mainLogoWrapper}
                         onClick = { () => {
@@ -210,10 +231,11 @@ export function MainPage(props){
                         </div>
 
                     </div>
+
                     <div 
                         className={styles.textDivWrapper}
                         style={{
-                            display : hoveredLogo2? "none" : "flex"
+                            // display : hoveredLogo2? "none" : "flex"
                         }}
                     >
                         <h1 className={styles.h1}>
@@ -230,7 +252,6 @@ export function MainPage(props){
                                 SOUPP
                             </a>
                             ?
-                            {/* {mainPageContent[content].heading} */}
                         </h1>
                         <div 
                             className={styles.mobile}
@@ -261,13 +282,11 @@ export function MainPage(props){
 
                         </div>
                         <h2 
-                            // className={clickedMobile? styles.h2Clicked : styles.h2}
                             className={styles.h2}
                             style={{
                                 display : clickedMobile ? "none" : "block"
                             }}
                         >
-                            {/* {globalContent[props.lang].mainPageContent[content].subheading} */}
                             <div>
                                 {
                                 content == 0 ? globalContent[props.lang].mainPageContent[content].subheading
@@ -275,16 +294,6 @@ export function MainPage(props){
                                 globalContent[props.lang].mainPageContent[content].chat1
                                 }
                             </div>
-                            {/* <div
-                                style={{
-                                    textDecoration : "underline",
-                                    marginTop : "10px",
-                                    cursor : "pointer"
-                                }}
-                                onClick={()=> setPopupOpen(true)}
-                            >
-                                Подробнее...
-                            </div> */}
                             <div>
                                 {globalContent[props.lang].mainPageContent[content].chat2}
                             </div>
