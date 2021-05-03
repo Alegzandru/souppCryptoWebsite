@@ -42,7 +42,7 @@ function HomePage() {
                             {globalContent[language].disclaimer.heading}
                         </div>
                         <div className={styles.subheading}>
-                            {globalContent[language].disclaimer.text}
+                            {globalContent[language].disclaimer.textShort}
                         </div>
                         <div
                             onClick={
