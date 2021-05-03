@@ -127,11 +127,17 @@
     font-family: Futura PT custom Demi;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 
     border: 0px solid #2D3E50;
+}
+
+.flag{
+    width: 18px;
+    height: auto;
+    margin-right: 10px;
 }
 
 .mobileLink{
@@ -337,4 +343,10 @@
         display: flex;
     }
 
+}
+
+@media screen and (max-width: 528px){
+    .languageButton{
+        display: none;
+    }
 }

@@ -72,10 +72,12 @@ export const sliderVideos = [
         src : "/IMG_2326.mp4",
         text: [
             {
-                text1 : "#futures — кратко/среднесрочные прогнозы на криптовалютном рынке в паре к USDT и к BTC."
+                text1 : "#futures — кратко/среднесрочные прогнозы на криптовалютном рынке в паре к USDT и к BTC.",
+                text2 : "Сервис основан первым учеником, чей успех в аналитике и обучении превзошёл любые ожидания. 86% + успешных сделок, 4 месяца с ноля до про уровня понимания торговли. Не веришь? Зайди и проверь"
             },
             {
-                text1 : "#futures — short / medium-term forecasts in the cryptocurrency market in pairs to USDT and BTC."
+                text1 : "#futures — short / medium-term forecasts in the cryptocurrency market in pairs to USDT and BTC.",
+                text2 : "The service was founded by the first student whose success in analytics and learning exceeded any expectations. 86% + successful trades, 4 months from zero to about the level of understanding of the trade. Do'nt believe us? Join us and see for yourself"
             }
         ]
     },
@@ -83,10 +85,12 @@ export const sliderVideos = [
         src : "/IMG_2327.mp4",
         text: [
             {
-                text1 : "#priceprediction — долгосрочные прогнозы на криптовалютном рынке, как в паре к USDT, так и к BTC."
+                text1 : "#priceprediction — долгосрочные прогнозы на криптовалютном рынке, как в паре к USDT, так и к BTC.",
+                text2 : "Есть мнение, что делать прогнозы на больших тф - дело неблагодарное и граничит с лотереей, потому что человек не в силах знать будущее. Именно в price prediction мы пытаемся прогнозировать события на тф 1D и довольно успешно"
             },
             {
-                text1 : "#priceprediction — long-term forecasts for the cryptocurrency market, both in pairs to USDT and BTC."
+                text1 : "#priceprediction — long-term forecasts for the cryptocurrency market, both in pairs to USDT and BTC.",
+                text2 : "There is an opinion that making predictions on large TFs is a thankless task and borders on a lottery, because a person is not able to know the future. It is in price prediction that we are trying to predict events on TF 1D and quite successfully"
             }
         ]
     },
@@ -159,10 +163,12 @@ export const sliderVideos = [
         src : "IMG_0888.mp4",
         text: [
             {
-                text1 : "#digest - Краткий обзор работы рынков, SOUPP комьюнити, наших успехов и планах."
+                text1 : "#digest - Краткий обзор работы рынков, SOUPP комьюнити, наших успехов и планах.",
+                text2 : "Для любителей воскресного чтива: выжимка из личного опыта, квинтэссенция ошибок и основ трейдинга от учеников, прошедших курс, авторские статьи по психологии. Все это в наших дайджестах."
             },
             {
-                text1 : "#digest - Brief overview of the markets, SOUPP community, our successes and plans."
+                text1 : "#digest - Brief overview of the markets, SOUPP community, our successes and plans.",
+                text2 : "For lovers of Sunday reading: an extract from personal experience, the quintessence of mistakes and the basics of trading from students who have completed the course, author's articles on psychology. All this is in our digests."
             }
         ]
     },
@@ -196,10 +202,12 @@ export const sliderVideos = [
         src : "IMG_0894.mp4",
         text: [
             {
-                text1 : "#livetrade - группа, в которой участники сообщества делятся своими успехами"
+                text1 : "#livetrade - группа, в которой участники сообщества делятся своими успехами",
+                text2 : "Группа создана для оценки потока торговли, уровня вовлеченности, насколько начинающие трейдеры усваивают материал, в какую сторону торгуют и как у них это получается"
             },
             {
-                text1 : "#livetrade - group where community members share their successes"
+                text1 : "#livetrade - group where community members share their successes",
+                text2 : "The group was created to assess the flow of trading, the level of involvement, how much beginner traders learn the material, in which direction they trade and how they do it"
             }
         ]
     }

@@ -51,47 +51,7 @@ export function AboutUsStats(props){
                             </span>
                             {sliderVideos[currentVideo].text[props.lang].text2 ? " (с) mr.Soupp" : ""}
                         </p>
-                        {/* <div className={styles.statsWrapper}>
-                            <div className={styles.statsContainer}>
-                                <p className={styles.pWhite}>
-                                    {globalContent[props.lang].aboutUsStatsContent.stat1.number}
-                                </p>
-                                <p className={styles.pBlue}>
-                                    {globalContent[props.lang].aboutUsStatsContent.stat1.text}
-                                </p>
-                            </div>
-                            <div className={styles.statsContainer}>
-                                <p className={styles.pWhite}>
-
-                                    {
-                                        showStat?
-                                        <CountUp
-                                            end={50}
-                                            duration={10}
-                                            start={10}
-                                        />
-                                        :
-                                        <span>
-                                            50
-                                        </span>
-                                    }
-
-                                    +
-                                </p>
-
-                                <p className={styles.pBlue}>
-                                    {globalContent[props.lang].aboutUsStatsContent.stat2.text}
-                                </p>
-                            </div>
-                            <div className={styles.statsContainer}>
-                                <p className={styles.pWhite}>
-                                    {globalContent[props.lang].aboutUsStatsContent.stat3.number}
-                                </p>
-                                <p className={styles.pBlue}>
-                                    {globalContent[props.lang].aboutUsStatsContent.stat3.text}
-                                </p>
-                            </div>
-                        </div> */}
+                        
                         <a
                             href="https://t.me/joinchat/AAAAAEgPEa1HRUVe6vN8Gw"
                             className={styles.link}

@@ -163,6 +163,7 @@
     font-family: Futura PT custom Demi;
 
     cursor: pointer;
+    display: none;
 }
 
 .button:active{

@@ -154,6 +154,7 @@ export function Navbar(props){
                             onClick={() => {
                                 setMobileLinkClicked1(true)
                                 setTimeout(() => setMobileLinkClicked1(false), 300)
+                                setNavbarOpen(false)
                             }}
                         >
                             Главная
@@ -168,6 +169,7 @@ export function Navbar(props){
                             onClick={() => {
                                 setMobileLinkClicked2(true)
                                 setTimeout(() => setMobileLinkClicked2(false), 300)
+                                setNavbarOpen(false)
                             }}
                         >
                             Про нас
@@ -182,6 +184,7 @@ export function Navbar(props){
                             onClick={() => {
                                 setMobileLinkClicked3(true)
                                 setTimeout(() => setMobileLinkClicked3(false), 300)
+                                setNavbarOpen(false)
                             }}
                         >
                             Услуги
@@ -196,6 +199,7 @@ export function Navbar(props){
                             onClick={() => {
                                 setMobileLinkClicked4(true)
                                 setTimeout(() => setMobileLinkClicked4(false), 300)
+                                setNavbarOpen(false)
                             }}
                         >
                             Рекомендации
@@ -210,12 +214,39 @@ export function Navbar(props){
                             onClick={() => {
                                 setMobileLinkClicked5(true)
                                 setTimeout(() => setMobileLinkClicked5(false), 300)
+                                setNavbarOpen(false)
                             }}
                         >
                             Контакты
                         </div>
                     </a>
                 </Link>
+                <div 
+                    className={styles.mobileLinkWrapper}
+                    onClick={ () => {
+                        setLanguage(0)
+                        setNavbarOpen(false)
+                    }}
+                >
+                    <img
+                        src="/ruFlag.png"
+                        className={styles.flag}
+                    ></img>
+                    RU
+                </div>
+                <div 
+                    className={styles.mobileLinkWrapper}
+                    onClick={ () => {
+                        setLanguage(1)
+                        setNavbarOpen(false)
+                    }}
+                >
+                    <img
+                        src="/enFlag.png"
+                        className={styles.flag}
+                    ></img>
+                    EN
+                </div>
             </div>
 
             <div 
