@@ -27,7 +27,10 @@ function HomePage() {
     })
 
     return(
-            <Layout>
+            <Layout
+                title={globalContent[language].layout.titleMain}
+                description={globalContent[language].layout.meta}
+            >
                 <Fade bottom>
                     <div 
                         className={styles.popupWrapper}

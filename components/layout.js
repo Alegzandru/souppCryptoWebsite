@@ -7,7 +7,7 @@ export default class Layout extends Component {
     
     render() {
 
-    const { children, title, style, className } = this.props;
+    const { children, title, description, style, className } = this.props;
 
     return (
         <div>
@@ -15,6 +15,12 @@ export default class Layout extends Component {
             {process.env.NODE_ENV !== 'production' && (
                 <link rel="stylesheet" type="text/css" href={'/_next/static/css/styles.chunk.css?v=' + Date.now()} />
             )}
+            <link rel="shortcut icon" href="/SOUPPlogoSquare2.ico" />
+            <title>{title}</title>
+
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <meta name="description" content={description}/>
         </Head>
 
         <header id="navBar">
