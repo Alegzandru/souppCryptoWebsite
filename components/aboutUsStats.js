@@ -38,8 +38,18 @@ export function AboutUsStats(props){
                         <p className={styles.subheading}>
                             {sliderVideos[currentVideo].text[props.lang].text1}
                         </p>
-                        <p className={styles.subheading}>
-                            {sliderVideos[currentVideo].text[props.lang].text2}
+                        <p></p>
+                        <p className={styles.subheading2}>
+                            <span
+                                style={{
+                                    fontStyle : "italic",
+                                }}
+                            >
+                                {sliderVideos[currentVideo].text[props.lang].text2 ? `"` : ``}
+                                {sliderVideos[currentVideo].text[props.lang].text2}
+                                {sliderVideos[currentVideo].text[props.lang].text2 ? `"` : ``}
+                            </span>
+                            {sliderVideos[currentVideo].text[props.lang].text2 ? " (с) mr.Soupp" : ""}
                         </p>
                         {/* <div className={styles.statsWrapper}>
                             <div className={styles.statsContainer}>

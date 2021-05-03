@@ -31,7 +31,15 @@
 
 .subheading{
     font-size: 24px;
-    font-family: Futura PT custom Demi; 
+    font-family: Futura PT custom Book; 
+    color: #C5C5C5;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.subheading2{
+    font-size: 24px;
+    font-family: Futura PT custom Book; 
     color: #C5C5C5;
     margin-bottom: 0px;
     margin-top: 0px;
@@ -126,6 +134,8 @@
     font-family: Futura PT custom Demi;
 
     cursor: pointer;
+
+    display: none;
 }
 
 /* unvisited link */
@@ -233,6 +243,11 @@
     }
     
     .subheading{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .subheading2{
         font-size: 20px;
         text-align: center;
     }

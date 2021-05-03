@@ -1,6 +1,7 @@
 .mainPageWrapper{
     height : auto;
     background-color: #2D3E50;
+    padding-bottom: 200px;
 }
 
 .mainPageContainer{
@@ -201,9 +202,13 @@
 
 .mobile{
     height: auto;
+    /* overflow: hidden; */
     width: 100%;
 
     display: none;
+/* 
+    max-height: 100vh;
+    max-width: 100vh; */
 }
 
 

@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import { useContext, useEffect, useState } from "react"
 import {globalContent} from "./content"
 import Fade from 'react-reveal/Fade';
-import { PopupContext } from "./context";
+import { PopupContext , WidthContext} from "./context";
 
 
 export function MainPage(props){
@@ -15,6 +15,7 @@ export function MainPage(props){
     const [clickedMobile, setClickedMobile] = useState(false)
     const [content, setContent] = useState(0)
     const {popupOpen, setPopupOpen} = useContext(PopupContext)
+    const {width, setWidth} = useContext(WidthContext)
 
     const [active1, setActive1] = useState(0)
     const [active2, setActive2] = useState(0)
@@ -23,14 +24,17 @@ export function MainPage(props){
 
 
     const scrollPosition = () => {
-        if(window.scrollY > 400){
-            setScrolledBy(true)
+        if(window.scrollY > 1400 && width>528 ){
+            setHoveredLogo(false)
+            setHoveredLogo2(false)
         }
-        if(window.scrollY < 400){
-            setScrolledBy(false)
+
+        if(window.scrollY > 2000 && width<528){
+            setHoveredLogo(false)
+            setHoveredLogo2(false)
         }
         
-        // console.log(props.lang)
+        // console.log(window.scrollY)
     }
 
     if (typeof window !== "undefined") {
@@ -238,7 +242,12 @@ export function MainPage(props){
                             // display : hoveredLogo2? "none" : "flex"
                         }}
                     >
-                        <h1 className={styles.h1}>
+                        <h1 
+                            className={styles.h1}
+                            style={{
+                                display : hoveredLogo2? "none" : "block"
+                            }}
+                        >
                             {globalContent[props.lang].mainPageContent[content].heading} 
                             <a 
                                 className={styles.souppLink}
@@ -257,20 +266,24 @@ export function MainPage(props){
                             className={styles.mobile}
                         >
                             <img 
-                                className={clickedMobile ? styles.mainLogoMobileClicked : styles.mainLogoMobile} 
+                                className={hoveredLogo ? styles.mainLogoMobileClicked : styles.mainLogoMobile} 
+                                // className={styles.mainLogoMobile}
+                                style={{display : hoveredLogo2 ? "none" : "block"}}
                                 src="/SOUPPlogoSquare2.svg"
                                 onClick={ () => {
                                     setClickedMobile(true)
                                     setContent(0)
+                                    setHoveredLogo(true)
                                     setTimeout(() => setHoveredLogo2(true), 1500)
                                 }}
                             ></img>
                             <div
                                 className={styles.scrollLogoMobile}
-                                style={{display : clickedMobile ? "none" : "block"}}
+                                style={{display : hoveredLogo ? "none" : "block"}}
                                 onClick={ () => {
                                     setClickedMobile(true)
                                     setContent(0)
+                                    setHoveredLogo(true)
                                     setTimeout(() => setHoveredLogo2(true), 1500)
                                 }}
                             >
@@ -284,7 +297,7 @@ export function MainPage(props){
                         <h2 
                             className={styles.h2}
                             style={{
-                                display : clickedMobile ? "none" : "block"
+                                display : hoveredLogo ? "none" : "block"
                             }}
                         >
                             <div>
@@ -313,7 +326,7 @@ export function MainPage(props){
                     <h1 
                         className={styles.hiddenH1}
                         style={{
-                            display : hoveredLogo2? "block" : "none"
+                            display : hoveredLogo? "block" : "none"
                         }}
                     >
                         {globalContent[props.lang].newMainPageContent.heading}
@@ -321,7 +334,7 @@ export function MainPage(props){
                     <div 
                         className={styles.advantagesContainer}
                         style={{
-                            display : hoveredLogo2? "flex" : "none"
+                            display : hoveredLogo? "flex" : "none"
                         }}
                     >
                         <div className={styles.advantagesColumn}>
