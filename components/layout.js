@@ -15,7 +15,7 @@ export default class Layout extends Component {
             {process.env.NODE_ENV !== 'production' && (
                 <link rel="stylesheet" type="text/css" href={'/_next/static/css/styles.chunk.css?v=' + Date.now()} />
             )}
-            <link rel="shortcut icon" href="/SOUPPlogoSquare2.ico" />
+            <link rel="shortcut icon" href="/souppLogoPng.ico" />
             <title>{title}</title>
 
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
