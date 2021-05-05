@@ -4,6 +4,7 @@ import {AboutUsTrading} from "../components/aboutUsTrading"
 import {OurServices} from "../components/ourServices"
 import {Testimonials} from "../components/testimonials"
 import {Contacts} from "../components/contacts"
+import {Indicators} from "../components/indicators"
 import {Footer} from "../components/footer"
 import Layout from "../components/layout"
 import {useContext, useEffect, useState} from "react"
@@ -72,6 +73,9 @@ function HomePage() {
                     <AboutUsTrading
                         lang={language}
                     ></AboutUsTrading>
+                    <Indicators
+                        lang={language}
+                    ></Indicators>
                     <OurServices
                         lang={language}
                     ></OurServices>

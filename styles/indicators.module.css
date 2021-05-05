@@ -1,5 +1,5 @@
 .wrapper{
-    height: 800px;
+    height: 900px;
     background-color: #2D3E50;
     overflow: hidden;
 }
@@ -29,9 +29,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 
-    height: 700px;
+    height: auto;
 }
 
 .sliderWrapper{
@@ -46,7 +46,8 @@
 
 .tradingImg{
     height: 420px;
-    width: 540px;
+    width: 100%;
+    object-fit: contain;
 }
 
 .changeSlideButtonsWrapper{
@@ -164,6 +165,7 @@
 @media screen and (max-width: 992px){
     .wrapper{
         height: auto;
+        padding-top: 50px;
     }
     
     .container{
@@ -206,6 +208,7 @@
     .tradingImg{
         height: 320px;
         width: 100%;
+        object-fit: contain;
     }
     
     .changeSlideButtonsWrapper{
@@ -249,7 +252,7 @@
     }
     
     .subheading{
-        margin-top: 0px;
+        margin-top: 30px;
         margin-bottom: 40px;
 
         text-align: center;
@@ -300,6 +303,7 @@
     .tradingImg{
         height: 240px;
         width: 100%;
+        object-fit: contain;
     }
     
     .changeSlideButtonsWrapper{
@@ -317,7 +321,7 @@
     }
     
     .subheading{
-        margin-top: 0px;
+        margin-top: 30px;
         margin-bottom: 30px;
 
         text-align: center;

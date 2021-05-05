@@ -63,7 +63,7 @@ export const globalContent = [
         {
             heading : "Мы всегда анализируем рынок",
             heading2: "Наш опыт",
-            subheading : "За 4 года анализа рынка, мы научились качественно предсказывать падение/рост криптовалют и акции.",
+            subheading : "За 4 года опыта на крипто-валютном рынке, мы научились понимать поведение цены в различные моменты состояния рынков. И перенесли свой опыт в наши торговые сервисы",
             stat1:{
                 number : "1/3",
                 text: " стабильный R-R"
@@ -76,6 +76,9 @@ export const globalContent = [
                 number : "Риск",
                 text: " выбираете сами"
             }
+        },
+        indicators: {
+            heading : "Индикаторы"
         },
         ourServicesContent:
         {
@@ -221,7 +224,7 @@ export const globalContent = [
         {
             heading : "We always keep an eye on the market",
             heading2: "Our experience",
-            subheading : "During the last 4 years we learnt how to correctly interpret the market shifts of the cryptocurrencies and stocks.",
+            subheading : "Over 4 years of experience in the crypto-currency market, we have learned to understand the price behavior at various points in the state of the markets. And transferred their experience to our trading services",
             stat1:{
                 number : "1/3",
                 text: " Risk/Reward Ratio"
@@ -234,6 +237,9 @@ export const globalContent = [
                 number : "Agressive+conservative",
                 text: " risks"
             }
+        },
+        indicators: {
+            heading : "Indicators"
         },
         ourServicesContent:
         {

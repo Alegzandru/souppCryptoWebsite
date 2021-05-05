@@ -36,7 +36,7 @@ export function AboutUsTrading(props){
                                     style={{backgroundColor: hovered1? "transparent" : "#AFDF9D"}}
                                     onClick={() => {
                                         if(slide == 0){
-                                            setSlide(2)
+                                            setSlide(sliderPhotos.length - 1)
                                         }
                                         else{
                                             setSlide(slide-1)
@@ -56,7 +56,7 @@ export function AboutUsTrading(props){
                                     onMouseLeave={() => setHovered2(false)}
                                     style={{backgroundColor: hovered2? "transparent" : "#AFDF9D"}}
                                     onClick={() => {
-                                        if(slide == 2){
+                                        if(slide == sliderPhotos.length - 1){
                                             setSlide(0)
                                         }
                                         else{

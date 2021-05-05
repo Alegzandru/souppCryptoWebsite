@@ -1,16 +1,60 @@
 export const sliderPhotos = [
     {
-        number : 1,
         photo : "/trade1.png" 
     },
     {
-        number : 2,
         photo : "/trade2.png" 
     },
     {
-        number : 3,
         photo : "/trade3.png" 
+    }
+]
+
+export const sliderPhotos2 = [
+    {
+        photo : "/indic4.png" ,
+        text : [
+            {
+                text : "Предоставляем авторские сетапы из индикаторов состояния рынка с алертами. Обьясняем как их готовить, что это такое и с чем едят в soupp #tools"
+            },
+            {
+                text : "We provide author's setups of market condition indicators with alerts. We explain how to prepare them, what they are and what we do with them #tools"
+            }
+        ]
     },
+    {
+        photo : "/indic5.png",
+        text : [
+            {
+                text : "SOUPP traders set 1"
+            },
+            {
+                text : "SOUPP traders set 1"
+            }
+        ]
+    },
+    {
+        photo : "/indic6.png",
+        text : [
+            {
+                text : "SOUPP traders set 2"
+            },
+            {
+                text : "SOUPP traders set 2"
+            }
+        ]
+    },
+    {
+        photo : "/indic7.png",
+        text : [
+            {
+                text : "SOUPP traders set 3"
+            },
+            {
+                text : "SOUPP traders set 3"
+            }
+        ]
+    }
 ]
 
 export const testimonialContentRu = [
@@ -112,11 +156,11 @@ export const sliderVideos = [
         text: [
             {
                 text1 : "#news - важные новости с фондового и крипто рынка, отчеты, цифры, выступления.",
-                text2 : "Важная информация, являющаяся тригером к движению цены."
+                text2 : "Информация, являющаяся тригером к движению цены."
             },
             {
                 text1 : "#news - important news from the stock and crypto market, reports, figures, speeches.",
-                text2 : "Important information triggering price movement."
+                text2 : "Information triggering price movement."
             }
         ]
     },
