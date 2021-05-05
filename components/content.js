@@ -109,7 +109,7 @@ export const globalContent = [
         navbarContent:
         {
             link1 : "Главная",
-            link2 : "Про Нас",
+            link2 : "О Нас",
             link3 : "Услуги",
             link4 : "Рекомендации",
             link5 : "Контакты",
